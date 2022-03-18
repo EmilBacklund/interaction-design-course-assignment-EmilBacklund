@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="GameHub, Game Hub, games, gamer, gaming">
-    <meta name="description" content="The community site of Game Hub. Talk to friend or meet new people. Share your experience."> 
-    <meta name="author" content="Emil Backlund">
-    <link href="/images/logo-2.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <meta name="keywords" content="GameHub, Game Hub, games, gamer, gaming" />
+    <meta
+      name="description"
+      content="The community site of Game Hub. Talk to friend or meet new people. Share your experience."
+    />
+    <meta name="author" content="Emil Backlund" />
+    <link
+      href="/images/logo-2.png"
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+    />
     <title>Game Hub | Community</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,78 +30,124 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/styles.css" />
+    <!-- HotJar -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2882262, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-C53RCNG1EB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-C53RCNG1EB");
+    </script>
   </head>
   <body>
-      <header>
+    <header>
       <a name="top"></a>
-          <div class="container">
-            <div class="navigation">
-             
-              <div class="nav hide-desktop">
-                <label for="hamburger-menu">
-                  <span class="screenreader-only">Hamburger Menu</span>
-                  <i class="fas fa-bars"></i>
-                </label>
-                <input id="hamburger-menu" type="checkbox" alt="Hamburger Menu" />
-                <ul class="dropdown">
-                  <li class="dropdown-item"><a href="/games.html">Games</a></li>
-    
-                  <li class="dropdown-item"><a href="/games.html">Buy games</a></li>
-    
-                  <li class="dropdown-item">
-                    <a href="/games.html">Sell games</a>
-                  </li>
-    
-                  <li class="dropdown-item"><a href="#">Help</a></li>
-    
-                  <li class="dropdown-item"><a href="/about.html">Contact</a></li>
-    
-                  <li class="dropdown-item">
-                    <a href="/profile-page.html">Login</a>
-                  </li>
-    
-                  <li class="dropdown-item">
-                    <a href="/register.html">Register</a>
-                  </li>
-                </ul>
-              </div>
-              <a href="/">
-                <img
-                  class="logo"
-                  src="/images/gamegub_logo.png"
-                  alt="Game Hub logo"
-                />
-              </a>
-              <ul class="hide-mobile">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/games.html">Games</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a id="desktop-active" href="/community.html">Community</a></li>
-              </ul>
-              <label for="searchbar"><span class="screenreader-only">Search the site:</span>
-              <input class="searchbar" id="searchbar" type="text" placeholder="Search" />
+      <div class="container">
+        <div class="navigation">
+          <div class="nav hide-desktop">
+            <label for="hamburger-menu">
+              <span class="screenreader-only">Hamburger Menu</span>
+              <i class="fas fa-bars"></i>
             </label>
-              <div>
-                <img class="hide-desktop search" src="/images/icons/search2.png" alt="Search here">
-                <a href="/profile-page.html"><i class="fas fa-user fa-lg"></i></a>
-              </div>
-              <i class="fas fa-cog fa-lg"></i>
-            </div>
+            <input id="hamburger-menu" type="checkbox" alt="Hamburger Menu" />
+            <ul class="dropdown">
+              <li class="dropdown-item"><a href="/games.html">Games</a></li>
+
+              <li class="dropdown-item"><a href="/games.html">Buy games</a></li>
+
+              <li class="dropdown-item">
+                <a href="/games.html">Sell games</a>
+              </li>
+
+              <li class="dropdown-item"><a href="#">Help</a></li>
+
+              <li class="dropdown-item"><a href="/about.html">Contact</a></li>
+
+              <li class="dropdown-item">
+                <a href="/profile-page.html">Login</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="/register.html">Register</a>
+              </li>
+            </ul>
           </div>
-        
-      </header>
-      <section>
-          <div class="hide-desktop">
-            <div>
-              <ul class="tabs">
-                <li class="home-mobile tabs-button"><a href="/index.html">Home</a></li>
-                <li class="games-mobile tabs-button"><a href="/games.html">Games</a></li>
-                <li class="about-mobile tabs-button"><a href="/about.html">About Us</a></li>
-                <li id="community-mobile" class="tabs-button"><a href="/community.html">Community</a></li>
-              </ul>
-            </div>
+          <a href="/">
+            <img
+              class="logo"
+              src="/images/gamegub_logo.png"
+              alt="Game Hub logo"
+            />
+          </a>
+          <ul class="hide-mobile">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/games.html">Games</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a id="desktop-active" href="/community.html">Community</a></li>
+          </ul>
+          <label for="searchbar"
+            ><span class="screenreader-only">Search the site:</span>
+            <input
+              class="searchbar"
+              id="searchbar"
+              type="text"
+              placeholder="Search"
+            />
+          </label>
+          <div>
+            <img
+              class="hide-desktop search"
+              src="/images/icons/search2.png"
+              alt="Search here"
+            />
+            <a href="/profile-page.html"><i class="fas fa-user fa-lg"></i></a>
           </div>
-      </section>
+          <i class="fas fa-cog fa-lg"></i>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="hide-desktop">
+        <div>
+          <ul class="tabs">
+            <li class="home-mobile tabs-button">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="games-mobile tabs-button">
+              <a href="/games.html">Games</a>
+            </li>
+            <li class="about-mobile tabs-button">
+              <a href="/about.html">About Us</a>
+            </li>
+            <li id="community-mobile" class="tabs-button">
+              <a href="/community.html">Community</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section class="community-body">
       <div class="container under-construction-flex">
         <div class="under-construction"></div>
@@ -105,50 +158,106 @@
     <footer>
       <div class="container hide-desktop">
         <div class="flex-items social-box margin-top">
-          <a href="#"><img class="icon-size" src="/images/icons/twitter.png" alt="twitter social-reach icon"></a>
-                <a href="#"><img class="twitch" src="/images/icons/twitch.png" alt="twitch social-reach icon"></a>
-                <a href="#"><img class="icon-size" src="/images/icons/instagram.png" alt="instagram social-reach icon"></a>
-                <a href="#"><img class="youtube" src="/images/icons/youtube.png" alt="youtube social-reach icon"></a>
-                <a href="#"><img class="facebook" src="/images/icons/facebook.png" alt="facebook social-reach icon"></a>
+          <a href="#"
+            ><img
+              class="icon-size"
+              src="/images/icons/twitter.png"
+              alt="twitter social-reach icon"
+          /></a>
+          <a href="#"
+            ><img
+              class="twitch"
+              src="/images/icons/twitch.png"
+              alt="twitch social-reach icon"
+          /></a>
+          <a href="#"
+            ><img
+              class="icon-size"
+              src="/images/icons/instagram.png"
+              alt="instagram social-reach icon"
+          /></a>
+          <a href="#"
+            ><img
+              class="youtube"
+              src="/images/icons/youtube.png"
+              alt="youtube social-reach icon"
+          /></a>
+          <a href="#"
+            ><img
+              class="facebook"
+              src="/images/icons/facebook.png"
+              alt="facebook social-reach icon"
+          /></a>
         </div>
         <div class="flex-items">
-            <div class="footer-box-mobile">
-              <a href="#top">
-                <h6 class="hide-desktop">Back to top</h6><i class="fas fa-arrow-up hide-desktop"></i>
-              </a>
-            </div>
-            <div class="footer-box-mobile">
-              <a href="/about.html">
-                <h5>Contact</h5>
-              </a>
+          <div class="footer-box-mobile">
+            <a href="#top">
+              <h6 class="hide-desktop">Back to top</h6>
+              <i class="fas fa-arrow-up hide-desktop"></i>
+            </a>
+          </div>
+          <div class="footer-box-mobile">
+            <a href="/about.html">
+              <h5>Contact</h5>
+            </a>
           </div>
         </div>
         <div class="fit-content container2">
-          <p class="smaller">This website was created for educational purpose only.</p>
+          <p class="smaller">
+            This website was created for educational purpose only.
+          </p>
         </div>
       </div>
       <div class="container flex-items">
         <div class="footer-box footer-flex">
           <h2 class="underline hide-mobile">Social</h2>
           <div class="flex-icons">
-            <a href="#"><img class="icon-size" src="/images/icons/twitter.png" alt="twitter social-reach icon"></a>
-            <a href="#"><img class="twitch" src="/images/icons/twitch.png" alt="twitch social-reach icon"></a>
-            <a href="#"><img class="icon-size" src="/images/icons/instagram.png" alt="instagram social-reach icon"></a>
-            <a href="#"><img class="youtube" src="/images/icons/youtube.png" alt="youtube social-reach icon"></a>
-            <a href="#"><img class="facebook" src="/images/icons/facebook.png" alt="facebook social-reach icon"></a>
+            <a href="#"
+              ><img
+                class="icon-size"
+                src="/images/icons/twitter.png"
+                alt="twitter social-reach icon"
+            /></a>
+            <a href="#"
+              ><img
+                class="twitch"
+                src="/images/icons/twitch.png"
+                alt="twitch social-reach icon"
+            /></a>
+            <a href="#"
+              ><img
+                class="icon-size"
+                src="/images/icons/instagram.png"
+                alt="instagram social-reach icon"
+            /></a>
+            <a href="#"
+              ><img
+                class="youtube"
+                src="/images/icons/youtube.png"
+                alt="youtube social-reach icon"
+            /></a>
+            <a href="#"
+              ><img
+                class="facebook"
+                src="/images/icons/facebook.png"
+                alt="facebook social-reach icon"
+            /></a>
           </div>
         </div>
         <div class="footer-box footer-flex">
-            <a href="/about.html">
-              <h5 class="hide-mobile">Contact</h5>
-            </a>
+          <a href="/about.html">
+            <h5 class="hide-mobile">Contact</h5>
           </a>
+
           <div>
             <a href="#top">
-              <h6 class="hide-mobile">Back to top</h6><i class="fas fa-arrow-up hide-mobile"></i>
+              <h6 class="hide-mobile">Back to top</h6>
+              <i class="fas fa-arrow-up hide-mobile"></i>
             </a>
           </div>
-          <p class="hide-mobile">This website was created for educational purpose only.</p>
+          <p class="hide-mobile">
+            This website was created for educational purpose only.
+          </p>
         </div>
       </div>
     </footer>
