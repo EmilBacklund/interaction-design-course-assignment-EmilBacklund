@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.payment-body {
+  height: 100%;
+  width: 100%;
+}
+
+.background-picture {
+  width: 100%;
+  background-image: url('../images/background/register-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flex-payment-success {
+  display: flex;
+  justify-content: center;
+}
+
+.success-page {
+  height: 906px;
+  width: 50%;
+  min-width: 360px;
+  background-color: #425fbd;
+
+  padding: 20px 20px 60px 20px;
+}
+
+.logo-container {
+  max-width: 510px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.payment-heading {
+  color: #fff;
+  font-family: 'exo';
+  font-size: 37px;
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.heading-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.payment-text {
+  font-family: 'open sans';
+  font-size: 27px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-family: 'exo';
+  color: #fff;
+  font-size: 44px;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+  .payment-heading {
+    font-size: 37px;
+  }
+
+  .success-page {
+    height: 906px;
+    width: 50%;
+    min-width: 360px;
+    background-color: #425fbd;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    border-radius: 32px;
+  }
+
+  .payment-text {
+    margin-bottom: 0;
+  }
+}

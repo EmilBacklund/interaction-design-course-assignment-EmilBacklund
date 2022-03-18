@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'exo';
+  font-size: 18px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+.register-body {
+  height: 100%;
+  width: 100%;
+}
+
+.background-picture {
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/background/register-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flex-register {
+  display: flex;
+  justify-content: center;
+}
+
+.register-page {
+  height: 100%;
+  width: 50%;
+  min-width: 414px;
+  background: linear-gradient(91.35deg, #066e65 0.28%, #162c2c 98%);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.gamehub-logo {
+  width: 271px;
+}
+
+.create-account {
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 32px 32px 0px 0px;
+}
+
+.inner-account-container {
+  max-width: 414px;
+  padding: 52px 20px 52px 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.inner-account-container p {
+  color: #0d0d0d;
+}
+
+.inner-account-container input {
+  font-family: 'exo';
+  font-size: 18px;
+  font-weight: 600;
+  border-width: 0px;
+  height: 68px;
+  background-color: #dadada;
+  color: #0d0d0d;
+  margin-bottom: 0px;
+  text-indent: 20px;
+}
+
+.inner-account-container ::placeholder {
+  color: #0d0d0d;
+  opacity: 1;
+}
+
+.last-first-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-first-name input {
+  max-width: 182px;
+  margin-top: 17px;
+}
+
+.register-email {
+  margin: 10px 0px 10px 0px;
+}
+
+.register-email input,
+.register-password input {
+  width: 100%;
+}
+
+.register-password {
+  margin-bottom: 20px;
+}
+
+.register-password input {
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.see-password {
+  position: absolute;
+  transform: translate(337px, -42px);
+}
+
+button {
+  width: 100%;
+  height: 68px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'exo';
+  color: #fff;
+  border: none;
+  background-color: #191919;
+  padding-left: 20px;
+  text-align: left;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.fa-arrow-right {
+  color: #fff;
+  position: absolute;
+  transform: translate(341px, -45px);
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.line-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.line {
+  width: 6px;
+  height: 1px;
+  background-color: #868585;
+  margin-right: 8px;
+}
+
+.back-to-homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+}
+
+.back-to-homepage p {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  transform: translate(-20px, -9px);
+}
+
+.flex-terms {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.terms {
+  font-size: 14px;
+  width: 339px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.create-account-text {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sign-in {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.inner-account-container a {
+  color: #0d0d0d;
+}
+
+/* Register page ends */
+/* Success page start */
+
+.inner-success-container {
+  max-width: 414px;
+  padding: 110px 20px 80px 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 743px;
+}
+
+.inner-success-picture {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.inner-success-container h1 {
+  font-family: 'exo';
+  font-size: 43px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.inner-success-container p {
+  text-align: center;
+  font-family: 'open sans';
+  margin-bottom: 50px;
+}
+
+.inner-success-container h2 {
+  font-size: 43px;
+  font-family: 'exo';
+  text-align: center;
+  text-decoration: underline;
+}
+
+.inner-success-container a {
+  text-decoration: none;
+  color: #0d0d0d;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .register-password input[type='password']:not(:placeholder-shown) {
+    font-family: 'pass';
+    font-size: 30px;
+  }
+}
+
+@-moz-document url-prefix() {
+  .register-password input[type='password']:not(:placeholder-shown) {
+    font-family: 'pass';
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .register-page {
+    height: 100%;
+    width: 50%;
+    min-width: 414px;
+    background: linear-gradient(91.35deg, #066e65 0.28%, #162c2c 98%);
+    margin-top: 64px;
+    margin-bottom: 64px;
+    border-radius: 32px;
+  }
+
+  .create-account {
+    border-radius: 32px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .inner-account-container {
+    max-width: 374px;
+  }
+
+  .inner-success-container {
+    max-width: 374px;
+  }
+
+  .inner-success-container h1 {
+    font-size: 41px;
+  }
+
+  .last-first-name input {
+    max-width: 162px;
+    margin-top: 17px;
+  }
+
+  .see-password {
+    transform: translate(296px, -42px);
+  }
+
+  .fa-arrow-right {
+    transform: translate(300px, -45px);
+  }
+}

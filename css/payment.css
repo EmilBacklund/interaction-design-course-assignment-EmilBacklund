@@ -1,0 +1,348 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+.payment-body {
+  height: 100%;
+  width: 100%;
+}
+
+.background-picture {
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/background/register-background.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.flex-payment {
+  display: flex;
+  justify-content: center;
+}
+
+.payment-page {
+  height: 100%;
+  width: 50%;
+  min-width: 380px;
+  background-color: #e2e2e2;
+
+  padding: 20px;
+}
+
+.payment-card-box {
+  height: 360px;
+  background-color: #2e3b66;
+  border-radius: 32px;
+}
+
+.card-box-container {
+  max-width: 414px;
+  height: 100%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.payment-option-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.invisible-div {
+  width: 14px;
+}
+
+p {
+  font-family: 'open sans';
+}
+
+.payment-option-flex p {
+  color: white;
+  font-weight: bold;
+}
+
+.payment-card {
+  width: 100%;
+  height: 200px;
+  background-color: #e2e2e2;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.bank-number {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-card-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.small-card-text {
+  font-size: 12px;
+}
+
+.card-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.add-card {
+  height: 40px;
+  width: 85%;
+  background-color: #425fbd;
+  margin: 0 auto;
+  border-radius: 0 0 20px 20px;
+}
+
+.add-card-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+
+.add-card label {
+  cursor: pointer;
+}
+
+.payment-option-container {
+  max-width: 414px;
+  height: 504px;
+  margin: 0 auto;
+  padding: 30px 30px 0 30px;
+}
+
+.payment-option-text {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.card-selection-box {
+  width: 100%;
+  height: 58px;
+  border: 1px solid #908e8e;
+  margin-bottom: 10px;
+}
+
+.mastercard {
+  background-color: #fff;
+}
+
+.visa-card,
+.paypal {
+  background-color: #c4c4c4;
+}
+
+.paypal {
+  margin-bottom: 20px;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-right: 20px;
+  margin-left: 110px;
+}
+
+.mastercard-text {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.coming-soon-text {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.visa-paypal-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-picture-absolute {
+  position: absolute;
+  transform: translateX(-90px);
+}
+
+.line-through {
+  position: absolute;
+  width: 78px;
+  height: 1px;
+  background-color: black;
+  z-index: 10;
+  transform: translateX(-100px);
+}
+
+.summary-container {
+  width: 100%;
+  padding: 10px 20px 20px 20px;
+  height: 200px;
+}
+
+.left-summary-container {
+  width: 167px;
+}
+
+.cyberpunk {
+  background: url('../images/games/cyberpunk.jpg');
+  background-size: cover;
+  width: 153px;
+  height: 200px;
+}
+
+.right-summary-container {
+  width: 167px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.summary-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-summary-container p {
+  font-size: 14px;
+}
+
+.pay-button {
+  width: 167px;
+  height: 50px;
+  background-color: #425fbd;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  font-family: 'open sans';
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.summary-text {
+  font-weight: 700;
+}
+
+#add-card-overlay {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  width: 280px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: #e2e2e2;
+  z-index: 20;
+  transform: translate(-21px, -240px);
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  display: none;
+}
+
+.overlay p {
+  font-size: 12px;
+  font-family: 'open sans';
+  font-weight: bold;
+}
+
+.overlay input {
+  border-width: 0;
+  background-color: transparent;
+  opacity: 1;
+  color: black;
+  width: 100%;
+}
+
+input::placeholder {
+  color: black;
+  opacity: 1;
+  font-family: 'open sans';
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.valid-thru .slash,
+.valid-thru form {
+  display: inline-block;
+}
+
+.valid-thru input {
+  width: 20px;
+}
+
+.slash {
+  font-weight: bold;
+}
+
+.cvv {
+  width: 63px;
+}
+
+.cvv-valid-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overlay-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+#add-card-overlay:checked + .overlay {
+  display: block;
+  opacity: 1;
+}
+
+@media screen and (min-width: 425px) {
+  .payment-page {
+    min-width: 453px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    border-radius: 32px;
+  }
+
+  .overlay {
+    width: 354px;
+    transform: translate(-26px, -240px);
+  }
+}

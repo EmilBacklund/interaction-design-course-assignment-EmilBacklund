@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="GameHub, Game Hub, games, gamer, gaming" />
+    <meta name="author" content="Emil Backlund" />
+    <link
+      href="/images/logo-2.png"
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+    />
+    <title>Game Hub | Payment Option</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/payment.css" />
+  </head>
+  <body class="payment-body">
+    <div class="background-picture">
+      <section>
+        <div class="flex-payment">
+          <div class="payment-page">
+            <div class="payment-card-box">
+              <div class="card-box-container">
+                <div class="payment-option-flex">
+                  <div>
+                    <a href="/index.html"
+                      ><img src="/images/icons/arrow.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="payment-option-margin">
+                    <p>Payment options</p>
+                  </div>
+                  <div class="invisible-div"></div>
+                </div>
+                <div class="payment-card">
+                  <div class="payment-card-flex">
+                    <div><img src="/images/icons/mastercard.png" alt="" /></div>
+                    <div>
+                      <p class="bank-number">5221 **** **** 8524</p>
+                    </div>
+                    <div class="card-information">
+                      <div>
+                        <p class="small-card-text">Card holder</p>
+                        <p class="card-text">Emil Backlund</p>
+                      </div>
+                      <div>
+                        <p class="small-card-text">Expires</p>
+                        <p class="card-text">08 / 22</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="add-card">
+                  <label for="add-card-overlay">
+                    <p class="add-card-text">ADD NEW CARD</p>
+                  </label>
+                  <input id="add-card-overlay" type="checkbox" alt="add card" />
+                  <div class="overlay">
+                    <div class="overlay-flex">
+                      <div>
+                        <p>Card Holder Name</p>
+                        <form action="" method="post">
+                          <input
+                            type="text"
+                            name="firstname"
+                            placeholder="First Name"
+                          />
+                        </form>
+                        <div class="line"></div>
+                      </div>
+                      <div>
+                        <p>Card Number</p>
+                        <form action="" method="post">
+                          <input
+                            type="text"
+                            name="firstname"
+                            placeholder="Type in Card Number"
+                            maxlength="16"
+                          />
+                        </form>
+                        <div class="line"></div>
+                      </div>
+                      <div class="cvv-valid-flex">
+                        <div class="valid-thru">
+                          <p>Valid Thru</p>
+                          <form action="" method="post">
+                            <input
+                              type="text"
+                              name="firstname"
+                              placeholder="XX"
+                              maxlength="2"
+                            />
+                          </form>
+                          <p class="slash">/</p>
+                          <form action="" method="post">
+                            <input
+                              type="text"
+                              name="firstname"
+                              placeholder="XX"
+                              maxlength="2"
+                            />
+                          </form>
+                        </div>
+                        <div class="cvv">
+                          <p>CVV</p>
+                          <form action="" method="post">
+                            <input
+                              type="password"
+                              name="firstname"
+                              placeholder="XXX"
+                              maxlength="3"
+                            />
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-option-container">
+              <p class="payment-option-text">SELECT PAYMENT OPTIONS</p>
+              <div class="card-selection-box mastercard">
+                <div class="card-flex">
+                  <img
+                    class="card-picture-absolute"
+                    src="/images/icons/mastercard.png"
+                    alt=""
+                  />
+                  <p class="mastercard-text">MASTERCARD</p>
+                  <img src="/images/icons/checked.png" alt="" />
+                </div>
+              </div>
+              <div class="card-selection-box visa-card">
+                <div class="card-flex">
+                  <img
+                    class="card-picture-absolute"
+                    src="/images/icons/visa-card.png"
+                    alt=""
+                  />
+                  <div class="line-through"></div>
+                  <p class="visa-paypal-text">VISA CARD</p>
+                  <p class="coming-soon-text">Coming soon</p>
+                </div>
+              </div>
+              <div class="card-selection-box paypal">
+                <div class="card-flex">
+                  <img
+                    class="card-picture-absolute"
+                    src="/images/icons/paypal.png"
+                    alt=""
+                  />
+                  <div class="line-through"></div>
+                  <p class="visa-paypal-text">PAYPAL</p>
+                  <p class="coming-soon-text">Coming soon</p>
+                </div>
+              </div>
+
+              <div class="summary-flex">
+                <div class="left-summary-container">
+                  <div class="cyberpunk"></div>
+                </div>
+                <div class="right-summary-container">
+                  <p class="summary-text">Summary:</p>
+                  <div class="summary-flex">
+                    <p>cyberpunk</p>
+                    <p>300kr</p>
+                  </div>
+                  <p>
+                    You will get access to this game in the Game Hub client.
+                  </p>
+                  <a href="/payment-success.html"
+                    ><button class="pay-button">Pay 300 kr</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
