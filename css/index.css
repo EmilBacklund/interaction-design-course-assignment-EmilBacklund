@@ -1,0 +1,182 @@
+.carousel {
+  position: relative;
+  height: 620px;
+  width: 100%;
+  margin: 0 auto 200px;
+}
+
+.carousel__image {
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel__track-container .current-slide {
+  overflow: visible;
+  display: flex;
+}
+
+.carousel__track-container {
+  height: 100%;
+  position: relative;
+}
+
+.carousel__track {
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 240px;
+  display: none;
+}
+
+.carousel__slide img {
+  transform: translateY(-9.2%);
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__button--left {
+  left: -80px;
+  z-index: 99999;
+}
+
+.carousel__button--right {
+  right: -80px;
+  z-index: 99999;
+}
+
+.carousel__button img {
+  width: 40px;
+  filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(117deg)
+    brightness(105%) contrast(103%);
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background: #ed1c24;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+  background: #fdf4f4;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.game-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.desktop-nav {
+  display: flex;
+}
+
+.desktop-nav li {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 1300px) {
+  .carousel {
+    height: 235px;
+    margin-bottom: 0;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .carousel__indicator {
+    width: 9px;
+    height: 9px;
+    margin: 0 4px;
+  }
+
+  .carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    display: none;
+  }
+
+  .carousel__button--left {
+    left: -40px;
+  }
+
+  .carousel__button--right {
+    right: -40px;
+  }
+
+  .greensky-box {
+    height: 206px;
+    position: relative;
+    max-width: 414px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .greensky {
+    background-image: url(../images/greensky.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px 0 160px;
+  }
+
+  .tagline-box h1 {
+    font-size: 30px;
+  }
+
+  .carousel--mobile-hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: inherit;
+  }
+}

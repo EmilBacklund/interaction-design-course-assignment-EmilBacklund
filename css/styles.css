@@ -15,16 +15,6 @@ textarea:focus::placeholder {
   color: transparent;
 }
 
-.container2 {
-  max-width: 414px;
-  margin: 0 auto;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
-
 body {
   background: linear-gradient(
     89.98deg,
@@ -40,14 +30,14 @@ header {
 
 p {
   color: white;
-  font-family: 'open sans';
+  font-family: "open sans";
   font-size: 16px;
 }
 
 .navigation {
   height: 96px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   align-items: center;
 }
@@ -67,7 +57,7 @@ p {
 a {
   text-decoration: none;
   color: white;
-  font-family: 'exo';
+  font-family: "exo";
   font-weight: 500;
   font-size: 18px;
 }
@@ -87,8 +77,7 @@ ul li a:hover {
 
 .navigation ul li {
   list-style: none;
-  display: block;
-  margin: 17px;
+  display: flex;
 }
 
 .tabs li {
@@ -107,7 +96,7 @@ ul li a:hover {
   text-align: center;
   border-radius: 0 0 10px 10px;
   font-size: 18px;
-  font-family: 'exo';
+  font-family: "exo";
   color: white;
   font-weight: 500;
   box-shadow: 0px 3px 5px -2px #0d0d0d, inset 2px 2px 6px 0px #0d0d0d;
@@ -250,7 +239,7 @@ i {
 
 .header-picture {
   height: 100%;
-  background-image: url('../images/control.png');
+  background-image: url("../images/control.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -258,9 +247,7 @@ i {
 
 h1 {
   color: white;
-  font-family: 'exo';
-  font-size: 30px;
-  font-weight: 600;
+  font-family: "exo";
 }
 
 .red {
@@ -270,13 +257,6 @@ h1 {
 .red3 {
   color: #ed1c24;
   font-weight: normal;
-}
-
-.tagline-box {
-  height: 104px;
-  position: absolute;
-  top: 45px;
-  left: 20px;
 }
 
 .less-important {
@@ -292,7 +272,7 @@ h1 {
   margin-right: 20px;
 }
 
-button {
+.cta-button {
   background-color: #0d0d0d;
   border-color: #ed1c24;
   color: white;
@@ -305,7 +285,7 @@ button {
   width: 95px;
   height: 31px;
   border-style: solid;
-  font-family: 'open sans';
+  font-family: "open sans";
   font-weight: 500;
 }
 
@@ -313,7 +293,7 @@ button {
   display: none;
 }
 
-button:hover {
+.cta-button:hover {
   box-shadow: #ed1c24 0px 0px 20px 0px;
 }
 
@@ -347,22 +327,9 @@ button:hover {
   display: none;
 }
 
-.greensky-box {
-  height: 206px;
-  position: relative;
-}
-
-.greensky {
-  background-image: url(../images/greensky.jpg);
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 160px;
-}
-
 h3 {
   font-size: 22px;
-  font-family: 'Exo';
+  font-family: "Exo";
   font-weight: 500;
 }
 
@@ -382,7 +349,7 @@ h3 {
 .underline {
   font-size: 30px;
   font-weight: bold;
-  font-family: 'Exo';
+  font-family: "Exo";
   border-bottom: 3px solid #ed1c24;
   color: white;
   width: fit-content;
@@ -416,7 +383,7 @@ h3 {
 .about-us-picture {
   width: 177px;
   height: 191px;
-  background-image: url('../images/slot-machines.png');
+  background-image: url("../images/slot-machines.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -445,7 +412,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'open sans';
+  font-family: "open sans";
   font-size: 14px;
   font-weight: lighter;
   text-decoration: underline 1px;
@@ -455,7 +422,7 @@ h4 {
 .drbrave-text {
   width: 135px;
   height: 56px;
-  font-family: 'open sans';
+  font-family: "open sans";
   font-weight: normal;
   font-style: italic;
   text-align: center;
@@ -570,7 +537,7 @@ footer {
 
 h5 {
   font-size: 20px;
-  font-family: 'Exo';
+  font-family: "Exo";
   font-weight: bold;
   color: white;
   text-decoration: underline;
@@ -578,7 +545,7 @@ h5 {
 
 h6 {
   font-size: 22px;
-  font-family: 'Exo';
+  font-family: "Exo";
   font-weight: 500;
   color: white;
   display: inline-block;
@@ -612,7 +579,7 @@ h6 {
 }
 
 h2 {
-  font-family: 'exo';
+  font-family: "exo";
   font-size: 24px;
   display: inline-block;
 }
@@ -635,7 +602,7 @@ h2 {
 
 .contact p,
 .contact input {
-  font-family: 'mulish';
+  font-family: "mulish";
   font-size: 16px;
   border-width: 0px;
   width: 100%;
@@ -704,7 +671,7 @@ textarea {
   background-color: transparent;
   border: none;
   color: #fff;
-  font-family: 'mulish';
+  font-family: "mulish";
   font-size: 16px;
   resize: none;
   height: 28px;
@@ -763,7 +730,7 @@ textarea {
 
 .communnity-market p,
 .games p {
-  font-family: 'exo';
+  font-family: "exo";
   font-weight: 600;
 }
 
@@ -905,7 +872,7 @@ textarea {
 
 .profile-name {
   font-size: 18px;
-  font-family: 'exo';
+  font-family: "exo";
   font-weight: 500;
 }
 
@@ -941,7 +908,7 @@ textarea {
   font-size: 10px;
   height: 21px;
   width: 59px;
-  font-family: 'exo';
+  font-family: "exo";
   font-weight: 500;
   margin-top: 0px;
 }
@@ -1004,7 +971,7 @@ textarea {
 }
 
 .profile-page p {
-  font-family: 'exo';
+  font-family: "exo";
   line-height: 25px;
 }
 
@@ -1154,13 +1121,13 @@ textarea {
   display: inline-block;
   font-size: 18px;
   color: #fff;
-  font-family: 'exo';
+  font-family: "exo";
 }
 
 .breadcrumbs p {
   font-size: 18px;
   font-weight: lighter;
-  font-family: 'exo';
+  font-family: "exo";
 }
 
 .breadcrumbs a {
@@ -1191,12 +1158,12 @@ textarea {
   font-size: 14px;
   font-weight: lighter;
   transform: translateY(-4px);
-  font-family: 'exo';
+  font-family: "exo";
 }
 
 .game-cost-text {
   font-size: 14px;
-  font-family: 'exo';
+  font-family: "exo";
   margin-right: 10px;
 }
 
@@ -1268,7 +1235,7 @@ textarea {
 
 .desc-req-flex p {
   font-size: 14px;
-  font-family: 'exo';
+  font-family: "exo";
 }
 
 .description p,
@@ -1289,7 +1256,7 @@ textarea {
 }
 
 .under-construction {
-  background-image: url('../images/under-construction.png');
+  background-image: url("../images/under-construction.png");
   width: 100px;
   height: 94px;
   background-repeat: no-repeat;
@@ -1326,8 +1293,7 @@ textarea {
 
   .navigation ul li {
     list-style: none;
-    display: inline-block;
-    margin: 20px;
+    display: flex;
   }
 
   p {
@@ -1356,7 +1322,7 @@ textarea {
     height: 32px;
     border-radius: 20px;
     text-indent: 10px;
-    font-family: 'open sans';
+    font-family: "open sans";
     font-size: 14px;
     font-weight: 500;
     border-width: 0;
@@ -1376,13 +1342,8 @@ textarea {
   }
 
   .hero-banner {
-    height: 800px;
+    height: 500px;
     position: relative;
-  }
-
-  h1 {
-    font-size: 45px;
-    font-weight: 600;
   }
 
   .tagline-box {
@@ -1406,7 +1367,7 @@ textarea {
     margin-right: 0px;
   }
 
-  button {
+  .cta-button {
     font-size: 20px;
     border-width: 7px;
     border-radius: 0px 0px 40px 0px;
@@ -1829,7 +1790,7 @@ textarea {
   }
 
   .heart:hover {
-    background-image: url('../images/icons/filled-heart.png');
+    background-image: url("../images/icons/filled-heart.png");
     filter: drop-shadow(0px 0px 3px #ed1c24);
   }
 
@@ -1884,7 +1845,7 @@ textarea {
   }
 
   .under-construction {
-    background-image: url('../images/under-construction.png');
+    background-image: url("../images/under-construction.png");
     width: 316px;
     height: 296px;
     background-repeat: no-repeat;

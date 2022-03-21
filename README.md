@@ -28,3 +28,9 @@ TODO -- Write a report detailing the research you conducted during this course, 
 
 
  -->
+
+What to fix:
+
+<!--! Fix all buttons that has a <a></a> tag around them -->
+
+<!--! Fix the sizes of the pictures of necassery -->

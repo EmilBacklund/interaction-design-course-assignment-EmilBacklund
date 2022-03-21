@@ -27,6 +27,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/index.css" />
     <!-- HotJar -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -63,7 +64,7 @@
       <a name="top"></a>
       <div class="container">
         <div class="navigation">
-          <div class="nav hide-desktop">
+          <div class="mobile-nav">
             <label for="hamburger-menu">
               <span class="screenreader-only">Hamburger Menu</span>
               <i class="fas fa-bars"></i>
@@ -98,7 +99,7 @@
               alt="Game Hub logo"
             />
           </a>
-          <ul class="hide-mobile">
+          <ul class="desktop-nav">
             <li><a id="desktop-active" href="/index.html">Home</a></li>
             <li><a href="/games.html">Games</a></li>
             <li><a href="/about.html">About</a></li>
@@ -152,10 +153,12 @@
           </h1>
           <div class="buttons flex-buttons">
             <a href="/register.html"
-              ><button class="button-margin-right">Login</button></a
+              ><button class="cta-button button-margin-right">Login</button></a
             >
-            <a href="/register.html"><button>Register</button></a>
-            <button class="client-button">Client</button>
+            <a href="/register.html"
+              ><button class="cta-button">Register</button></a
+            >
+            <button class="cta-button client-button">Client</button>
           </div>
         </div>
         <div class="tagline-box2">
@@ -167,7 +170,137 @@
       </div>
     </section>
     <section class="container">
-      <div class="flex-items">
+      <div class="carousel">
+        <button class="carousel__button carousel__button--left is-hidden">
+          <img src="images/icons/left-arrow.svg" alt="" />
+        </button>
+        <div class="carousel__track-container">
+          <ul class="carousel__track">
+            <li class="carousel__slide current-slide">
+              <img
+                class="carousel__image"
+                src="images/games/cyberpunk.jpg"
+                alt=""
+              />
+              <div class="game-description">
+                <div>
+                  <h3><span class="red">Cyberpunk</span></h3>
+                  <p>
+                    The new update has a lot of new features. Cyberpunk is
+                    predicted to be the next top competitive game in e-sport.
+                  </p>
+                </div>
+                <div class="carousel--mobile-hide">
+                  <p><strong>Description:</strong></p>
+                  <p>
+                    Cyberpunk is a tactical fiction slashing game, involving two
+                    teams with 5 players in each team.
+                  </p>
+                  <p>
+                    Every game has 25 rounds and the team thats wins 13 of them
+                    wins the game.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="carousel__slide">
+              <img
+                class="carousel__image"
+                src="images/games/black.jpg"
+                alt=""
+              />
+              <div class="game-description">
+                <div>
+                  <h3><span class="red">Black</span></h3>
+                  <p>
+                    The new update has a lot of new features. Cyberpunk is
+                    predicted to be the next top competitive game in e-sport.
+                  </p>
+                </div>
+                <div class="carousel--mobile-hide">
+                  <p><strong>Description:</strong></p>
+                  <p>
+                    Cyberpunk is a tactical fiction slashing game, involving two
+                    teams with 5 players in each team.
+                  </p>
+                  <p>
+                    Every game has 25 rounds and the team thats wins 13 of them
+                    wins the game.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="carousel__slide">
+              <img
+                class="carousel__image"
+                src="images/games/forge-legend.jpg"
+                alt=""
+              />
+              <div class="game-description">
+                <div>
+                  <h3><span class="red">Forge Legend</span></h3>
+                  <p>
+                    Get into the world of Forge Legend and interact with other
+                    real-world players.
+                  </p>
+                </div>
+                <div class="carousel--mobile-hide">
+                  <p><strong>Description:</strong></p>
+                  <p>
+                    Forge Legend is a massively multiplayer online role-playing
+                    game (MMORPG).
+                  </p>
+                  <br />
+                  <p>
+                    Set in the fictional world of Arendahl, Forge Legend allows
+                    players to create avatar-style characters and explore a
+                    sprawling universe while interacting with nonreal
+                    players—called nonplayer characters (NPCs)—and other
+                    real-world players (PCs).
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="carousel__slide">
+              <img
+                class="carousel__image"
+                src="images/games/furious.jpg"
+                alt=""
+              />
+              <div class="game-description">
+                <div>
+                  <h3><span class="red">Furious</span></h3>
+                  <p>
+                    Earth is under attack by alien monkeys! Do everything you
+                    can to save the people of the earth from extinction.
+                  </p>
+                </div>
+                <div class="carousel--mobile-hide">
+                  <p><strong>Description:</strong></p>
+                  <p>Furious is a turn-based strategy game.</p>
+                  <br />
+                  <p>
+                    You are an elite scientist/commando inside an advanced
+                    Mecha-Suit capable of dimensional rift travel. Build up your
+                    base, collect samples and research new inventions to
+                    survive.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button class="carousel__button carousel__button--right">
+          <img src="images/icons/right-arrow.svg" alt="" />
+        </button>
+        <div class="carousel__nav">
+          <button class="carousel__indicator current-slide"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+        </div>
+      </div>
+      <!-- <div class="flex-items">
         <img
           class="cyberpunk"
           src="/images/games/cyberpunk.jpg"
@@ -192,20 +325,20 @@
             </p>
           </div>
           <div class="flex-items-cyberpunk">
-            <div>
-              <div class="circle"></div>
-              <div class="circle red2"></div>
-              <div class="circle red2"></div>
-              <div class="circle red2"></div>
-            </div>
+            <ul>
+              <li class="circle"></li>
+              <li class="circle red2"></li>
+              <li class="circle red2"></li>
+              <li class="circle red2"></li>
+            </ul>
             <a href="/cyberpunk-page.html"><button>Play Now</button></a>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
-    <section class="greensky hide-desktop">
-      <div class="container2 greensky-box">
-        <h1 class="tagline-box">
+    <section class="greensky">
+      <div class="greensky-box">
+        <h1 class="greensky--hide-desktop">
           Buy games and sell them later to save money.
         </h1>
       </div>
@@ -230,13 +363,13 @@
             other, rate games and find new friends to play with.
           </p>
           <a href="/about.html"
-            ><button class="hide-mobile">Read More</button></a
+            ><button class="cta-button hide-mobile">Read More</button></a
           >
         </div>
         <div class="about-us-picture-box">
           <div class="about-us-picture"></div>
           <a href="/about.html"
-            ><button class="hide-desktop">Read More</button></a
+            ><button class="cta-button hide-desktop">Read More</button></a
           >
         </div>
       </div>
@@ -275,7 +408,9 @@
           stuck on a quest, our community may be the right tool for you.
         </p>
         <p><span class="red">Share</span> your experience or get inspired.</p>
-        <a href="/community.html"><button>Read More</button></a>
+        <a href="/community.html"
+          ><button class="cta-button">Read More</button></a
+        >
       </div>
     </section>
     <footer>
@@ -384,5 +519,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/carousel.js"></script>
   </body>
 </html>
