@@ -1,3 +1,9 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .carousel {
   position: relative;
   height: 620px;
@@ -108,6 +114,38 @@
   margin: 0 10px;
 }
 
+.slogan {
+  font-size: 40px;
+}
+
+.greensky--hide-desktop {
+  display: none;
+}
+
+.about-us-section {
+  display: flex;
+  gap: 240px;
+}
+
+.community-section {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 120px;
+}
+
+.arrows {
+  height: 530px;
+  max-width: 530px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  font-size: 40px;
+}
+
 @media screen and (max-width: 1300px) {
   .carousel {
     height: 235px;
@@ -115,7 +153,7 @@
   }
 
   .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -162,12 +200,28 @@
     margin: 40px 0 160px;
   }
 
+  .less-important {
+    display: none;
+  }
+
   .tagline-box h1 {
     font-size: 30px;
   }
 
   .carousel--mobile-hide {
     display: none;
+  }
+
+  .greensky--hide-desktop {
+    display: inherit;
+  }
+
+  .about-us-section {
+    gap: 120px;
+  }
+
+  .community-section {
+    gap: 20px;
   }
 }
 
@@ -176,7 +230,95 @@
     display: none;
   }
 
+  .circle-profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(6, 0, 0, 0.4);
+  }
+
+  .arrows {
+    height: 300px;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    font-size: 21px;
+  }
+
+  .center-drbrave {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+  }
+
   .mobile-nav {
     display: inherit;
+  }
+
+  .tagline-box {
+    position: absolute;
+    top: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+  }
+
+  .about-us-box {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .about-us-section {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .circle-profile {
+    width: 177px;
+    height: 177px;
+  }
+
+  .arrows {
+    height: 177px;
+    max-width: 177px;
+  }
+
+  .center-drbrave {
+    height: 177px;
+    width: 177px;
+  }
+
+  .profile-picture {
+    width: 48px;
+    height: 48px;
+  }
+
+  .user-name {
+    font-size: 16px;
+  }
+
+  .drbrave-text {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .about-us-box {
+    margin-bottom: 40px;
   }
 }

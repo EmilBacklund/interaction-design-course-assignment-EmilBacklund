@@ -264,7 +264,6 @@ h1 {
 }
 
 .flex-buttons {
-  margin-top: 20px;
   display: flex;
 }
 
@@ -361,7 +360,7 @@ h3 {
 }
 
 .about-us {
-  width: 177px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -378,11 +377,12 @@ h3 {
 
 .about-us-picture-box {
   height: 235px;
+  width: 100%;
 }
 
 .about-us-picture {
-  width: 177px;
-  height: 191px;
+  width: 100%;
+  height: 100%;
   background-image: url("../images/slot-machines.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -399,21 +399,9 @@ h3 {
   height: 261px;
 }
 
-.circle-profile {
-  width: 177px;
-  height: 177px;
-  border-radius: 50%;
-  background: rgba(6, 0, 0, 0.4);
-}
-
-.profile-picture {
-  width: 48px;
-  height: 48px;
-}
-
-h4 {
+.user-name {
   font-family: "open sans";
-  font-size: 14px;
+  font-size: 18px;
   font-weight: lighter;
   text-decoration: underline 1px;
   color: white;
@@ -426,26 +414,7 @@ h4 {
   font-weight: normal;
   font-style: italic;
   text-align: center;
-  font-size: 10px;
-}
-
-.center-drbrave {
-  height: 177px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-}
-
-.arrows {
-  height: 177px;
-  width: 177px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  font-size: 21px;
+  font-size: 12px;
 }
 
 .fa-arrow-left {
@@ -474,11 +443,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.community-heading {
-  position: absolute;
-  transform: translateY(-70px);
+  flex: 1;
 }
 
 footer {
@@ -1348,9 +1313,12 @@ textarea {
 
   .tagline-box {
     width: 530px;
-    height: 178px;
+    height: 180px;
     position: absolute;
     top: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .client-button {
@@ -1368,12 +1336,11 @@ textarea {
   }
 
   .cta-button {
-    font-size: 20px;
-    border-width: 7px;
-    border-radius: 0px 0px 40px 0px;
-    width: 148.5px;
-    height: 54px;
-    margin-top: 30px;
+    font-size: 1.1rem;
+    border-width: 5px;
+    border-radius: 10px 0px 40px 0px;
+    width: 136px;
+    height: 48px;
   }
 
   .flex-items {
@@ -1390,6 +1357,7 @@ textarea {
   .less-important {
     font-weight: 500;
     display: inherit;
+    font-size: 40px;
   }
 
   .cyberpunk {
@@ -1435,7 +1403,7 @@ textarea {
   }
 
   .about-us-picture {
-    width: 530px;
+    width: 100%;
     height: 543.984px;
     border-radius: 54px;
   }
@@ -1460,8 +1428,8 @@ textarea {
     height: 136.8px;
   }
 
-  h4 {
-    font-size: 31px;
+  .user-name {
+    font-size: 32px;
   }
 
   .drbrave-text {
@@ -1472,6 +1440,11 @@ textarea {
 
   .center-drbrave {
     height: 530px;
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .arrows {
