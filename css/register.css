@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 p {
-  font-family: 'exo';
+  font-family: "exo";
   font-size: 18px;
 }
 
@@ -26,9 +27,9 @@ textarea:focus::placeholder {
 }
 
 .background-picture {
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  background-image: url('../images/background/register-background.png');
+  background-image: url("../images/background/register-background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -62,6 +63,7 @@ textarea:focus::placeholder {
   width: 100%;
   background-color: #f2f2f2;
   border-radius: 32px 32px 0px 0px;
+  position: relative;
 }
 
 .inner-account-container {
@@ -76,7 +78,7 @@ textarea:focus::placeholder {
 }
 
 .inner-account-container input {
-  font-family: 'exo';
+  font-family: "exo";
   font-size: 18px;
   font-weight: 600;
   border-width: 0px;
@@ -95,10 +97,12 @@ textarea:focus::placeholder {
 .last-first-name {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+  width: 100%;
 }
 
 .last-first-name input {
-  max-width: 182px;
+  width: 100%;
   margin-top: 17px;
 }
 
@@ -112,7 +116,8 @@ textarea:focus::placeholder {
 }
 
 .register-password {
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 10px;
 }
 
 .register-password input {
@@ -120,9 +125,16 @@ textarea:focus::placeholder {
   border: 1px solid black;
 }
 
+#passwordError {
+  transform: translateY(-10px);
+}
+
 .see-password {
   position: absolute;
-  transform: translate(337px, -42px);
+  top: 50%;
+  right: 20px;
+  transform: translatey(-50%);
+  cursor: pointer;
 }
 
 button {
@@ -130,7 +142,7 @@ button {
   height: 68px;
   font-size: 24px;
   font-weight: 700;
-  font-family: 'exo';
+  font-family: "exo";
   color: #fff;
   border: none;
   background-color: #191919;
@@ -140,12 +152,18 @@ button {
   cursor: pointer;
 }
 
+.signup-btm {
+  position: relative;
+}
+
 .fa-arrow-right {
   color: #fff;
   position: absolute;
-  transform: translate(341px, -45px);
   font-size: 20px;
   pointer-events: none;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .line-flex {
@@ -215,11 +233,17 @@ a {
 /* Success page start */
 
 .inner-success-container {
-  max-width: 414px;
   padding: 110px 20px 80px 20px;
   margin: 0 auto;
   box-sizing: border-box;
-  height: 743px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 99999;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  border-radius: 32px;
+  display: none;
 }
 
 .inner-success-picture {
@@ -229,7 +253,7 @@ a {
 }
 
 .inner-success-container h1 {
-  font-family: 'exo';
+  font-family: "exo";
   font-size: 43px;
   text-align: center;
   margin-bottom: 10px;
@@ -237,13 +261,13 @@ a {
 
 .inner-success-container p {
   text-align: center;
-  font-family: 'open sans';
+  font-family: "open sans";
   margin-bottom: 50px;
 }
 
 .inner-success-container h2 {
   font-size: 43px;
-  font-family: 'exo';
+  font-family: "exo";
   text-align: center;
   text-decoration: underline;
 }
@@ -253,16 +277,24 @@ a {
   color: #0d0d0d;
 }
 
+.form-error {
+  display: none;
+  color: #ed1c24;
+  font-size: 13px;
+  font-family: "open sans";
+  font-weight: 600;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-  .register-password input[type='password']:not(:placeholder-shown) {
-    font-family: 'pass';
+  .register-password input[type="password"]:not(:placeholder-shown) {
+    font-family: "pass";
     font-size: 30px;
   }
 }
 
 @-moz-document url-prefix() {
-  .register-password input[type='password']:not(:placeholder-shown) {
-    font-family: 'pass';
+  .register-password input[type="password"]:not(:placeholder-shown) {
+    font-family: "pass";
     font-size: 18px;
   }
 }
@@ -270,12 +302,17 @@ a {
 @media screen and (min-width: 600px) {
   .register-page {
     height: 100%;
-    width: 50%;
     min-width: 414px;
+    max-width: 600px;
     background: linear-gradient(91.35deg, #066e65 0.28%, #162c2c 98%);
-    margin-top: 64px;
-    margin-bottom: 64px;
     border-radius: 32px;
+  }
+
+  .center-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
   }
 
   .create-account {
@@ -285,7 +322,8 @@ a {
 
 @media only screen and (max-width: 414px) {
   .inner-account-container {
-    max-width: 374px;
+    width: 100%;
+    padding: 52px 10px 52px 10px;
   }
 
   .inner-success-container {
@@ -297,15 +335,21 @@ a {
   }
 
   .last-first-name input {
-    max-width: 162px;
+    width: 100%;
     margin-top: 17px;
   }
 
-  .see-password {
-    transform: translate(296px, -42px);
+  .fa-arrow-right {
   }
 
-  .fa-arrow-right {
-    transform: translate(300px, -45px);
+  .register-page {
+    height: 100%;
+    min-width: 320px;
+    width: 100%;
+    background: linear-gradient(91.35deg, #066e65 0.28%, #162c2c 98%);
+  }
+
+  .logo-container {
+    padding: 16px;
   }
 }

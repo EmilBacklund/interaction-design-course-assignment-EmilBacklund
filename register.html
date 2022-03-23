@@ -64,107 +64,140 @@
   <body class="register-body">
     <div class="background-picture">
       <section class="container">
-        <div class="flex-register">
-          <div class="register-page">
-            <div class="logo-container">
-              <img class="gamehub-logo" src="/images/gamegub_logo.png" alt="" />
-            </div>
-            <div class="create-account">
-              <div class="inner-account-container">
-                <p class="create-account-text">Create An Account</p>
-                <p>
-                  Already Have An Account?
-                  <a href="/profilepage.html"
-                    ><span class="sign-in">Sign in</span></a
-                  >
-                </p>
-                <div class="last-first-name">
-                  <div>
-                    <form action="" method="post">
-                      <input
-                        type="text"
-                        name="firstname"
-                        placeholder="First Name"
-                      />
-                    </form>
+        <div class="center-container">
+          <div class="flex-register">
+            <div class="register-page">
+              <div class="logo-container">
+                <img
+                  class="gamehub-logo"
+                  src="/images/gamegub_logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="create-account">
+                <div class="inner-success-container">
+                  <div class="inner-success-picture">
+                    <img src="/images/icons/success.png" alt="" />
                   </div>
-                  <div>
-                    <form action="" method="post">
-                      <input
-                        type="text"
-                        name="lastname"
-                        placeholder="Last Name"
-                      />
-                    </form>
-                  </div>
-                </div>
-                <div class="register-email">
-                  <form action="" method="post">
-                    <input type="email" name="email" placeholder="Email" />
-                  </form>
-                </div>
-                <div class="register-password">
-                  <form action="" method="post">
-                    <input
-                      type="password"
-                      name="password"
-                      placeholder="Enter Password"
-                    />
-                  </form>
-                  <img
-                    class="see-password"
-                    src="/images/icons/see-password.png"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <a href="/login-success.html"><button>SIGN UP</button></a>
-                  <div><i class="fas fa-arrow-right"></i></div>
-                </div>
-                <div class="flex-terms">
-                  <p class="terms">
-                    By clicking Sign Up, you agree to our
-                    <span class="bold">terms</span> and <br />
-                    that you have read our
-                    <span class="bold">Data Use Policy</span>, including our
-                    <span class="bold">Cookie Use</span>.
+                  <h1>Register Success!</h1>
+                  <p>
+                    Check your email and follow the steps in the mail to
+                    activate your account.
                   </p>
+                  <a href="/index.html">
+                    <h2>CLOSE</h2>
+                  </a>
                 </div>
-                <div class="line-flex">
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                </div>
-                <div class="back-to-homepage">
-                  <div><i class="fas fa-arrow-left"></i></div>
-                  <div>
-                    <a href="/index.html">
-                      <p>Back to Homepage</p>
-                    </a>
-                  </div>
+                <div class="inner-account-container">
+                  <form id="contactForm">
+                    <p class="create-account-text">Create An Account</p>
+                    <p>
+                      Already Have An Account?
+                      <a href="profile-page.html"
+                        ><span class="sign-in">Sign in</span></a
+                      >
+                    </p>
+                    <div class="last-first-name">
+                      <div>
+                        <input
+                          type="text"
+                          name="firstname"
+                          placeholder="First Name"
+                          id="first-name"
+                        />
+                        <div class="form-error" id="firstNameError">
+                          Enter your first name
+                        </div>
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          name="lastname"
+                          placeholder="Last Name"
+                          id="last-name"
+                        />
+                        <div class="form-error" id="lastNameError">
+                          Enter your last name
+                        </div>
+                      </div>
+                    </div>
+                    <div class="register-email">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        id="email"
+                      />
+                      <div class="form-error" id="emailError">
+                        Please enter a valid email address
+                      </div>
+                    </div>
+                    <div class="register-password">
+                      <input
+                        type="password"
+                        name="password"
+                        placeholder="Enter Password"
+                        id="password"
+                      />
+                      <img
+                        class="see-password"
+                        src="/images/icons/see-password.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="form-error" id="passwordError">
+                      Your password must be at least 8 characters
+                    </div>
+                    <div class="signup-btm">
+                      <button>SIGN UP</button>
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="flex-terms">
+                      <p class="terms">
+                        By clicking Sign Up, you agree to our
+                        <span class="bold">terms</span> and <br />
+                        that you have read our
+                        <span class="bold">Data Use Policy</span>, including our
+                        <span class="bold">Cookie Use</span>.
+                      </p>
+                    </div>
+                    <div class="line-flex">
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                    </div>
+                    <div class="back-to-homepage">
+                      <div><i class="fas fa-arrow-left"></i></div>
+                      <div>
+                        <a href="/index.html">
+                          <p>Back to Homepage</p>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -172,5 +205,7 @@
         </div>
       </section>
     </div>
+    <script src="js/register-user.js"></script>
+    <script src="js/show-password.js"></script>
   </body>
 </html>
