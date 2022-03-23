@@ -250,6 +250,7 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  height: 150px;
 }
 
 .inner-success-container h1 {
@@ -266,7 +267,7 @@ a {
 }
 
 .inner-success-container h2 {
-  font-size: 43px;
+  font-size: 40px;
   font-family: "exo";
   text-align: center;
   text-decoration: underline;
@@ -327,19 +328,20 @@ a {
   }
 
   .inner-success-container {
-    max-width: 374px;
+    padding: 50px 20px 80px 20px;
   }
 
   .inner-success-container h1 {
-    font-size: 41px;
+    font-size: 32px;
+  }
+
+  .inner-success-container h2 {
+    font-size: 24px;
   }
 
   .last-first-name input {
     width: 100%;
     margin-top: 17px;
-  }
-
-  .fa-arrow-right {
   }
 
   .register-page {
@@ -351,5 +353,9 @@ a {
 
   .logo-container {
     padding: 16px;
+  }
+
+  .inner-success-picture {
+    height: 100px;
   }
 }
