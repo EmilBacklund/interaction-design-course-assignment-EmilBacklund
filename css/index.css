@@ -14,6 +14,7 @@ body {
 .carousel__image {
   height: 100%;
   object-fit: contain;
+  transform: translateY(-9.2%);
 }
 
 .carousel__track-container .current-slide {
@@ -44,10 +45,6 @@ body {
   display: none;
 }
 
-.carousel__slide img {
-  transform: translateY(-9.2%);
-}
-
 .carousel__button {
   position: absolute;
   top: 50%;
@@ -55,6 +52,12 @@ body {
   background: transparent;
   border: 0;
   cursor: pointer;
+}
+
+.carousel__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .carousel__button--left {
@@ -99,7 +102,12 @@ body {
 .game-description {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 100%;
+  min-width: 127px;
+  transform: translateY(-9.2%);
+  padding-top: 40px;
+  box-sizing: border-box;
 }
 
 .mobile-nav {
@@ -132,6 +140,7 @@ body {
   justify-content: space-between;
   height: 100%;
   margin-bottom: 120px;
+  gap: 240px;
 }
 
 .arrows {
@@ -146,10 +155,29 @@ body {
   font-size: 40px;
 }
 
+.game-description .cta-button {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1515px) {
+  .carousel__button {
+    top: unset;
+  }
+
+  .carousel__button--left {
+    left: 0;
+    bottom: -40px;
+  }
+
+  .carousel__button--right {
+    right: 0;
+    bottom: -40px;
+  }
+}
+
 @media screen and (max-width: 1300px) {
-  .carousel {
-    height: 235px;
-    margin-bottom: 0;
+  .community-section {
+    gap: 120px;
   }
 
   .container {
@@ -163,15 +191,9 @@ body {
     margin: 0 4px;
   }
 
-  .carousel__slide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    display: none;
+  .carousel__button {
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .carousel__button--left {
@@ -220,8 +242,24 @@ body {
     gap: 120px;
   }
 
-  .community-section {
-    gap: 20px;
+  .carousel {
+    height: 235px;
+  }
+
+  .carousel__container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    display: none;
   }
 }
 
@@ -281,8 +319,41 @@ body {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .community-section {
+    gap: 60px;
+  }
+
+  .greensky-box h1 {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  .carousel__button {
+    position: absolute;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    top: unset;
+  }
+
+  .carousel__button--left {
+    left: 0;
+    bottom: -60px;
+  }
+
+  .carousel__button--right {
+    bottom: -60px;
+    right: 0;
+  }
+}
+
 @media screen and (max-width: 660px) {
   .about-us-section {
+    gap: 20px;
+  }
+
+  .community-section {
     gap: 20px;
   }
 }
@@ -320,5 +391,9 @@ body {
 @media screen and (max-width: 414px) {
   .about-us-box {
     margin-bottom: 40px;
+  }
+
+  .carousel__slide {
+    gap: 20px;
   }
 }

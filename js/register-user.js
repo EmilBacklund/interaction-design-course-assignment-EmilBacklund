@@ -27,7 +27,7 @@ function validateSignup() {
   } else {
     emailError.style.display = "block";
   }
-  if (checkLength(password.value, 9) === true) {
+  if (checkLength(password.value, 7) === true) {
     passwordError.style.display = "none";
   } else {
     passwordError.style.display = "block";
