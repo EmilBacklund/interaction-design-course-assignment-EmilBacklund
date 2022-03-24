@@ -10,6 +10,12 @@ button:focus {
   outline: none;
 }
 
+.navigation__container {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 input:focus::placeholder,
 textarea:focus::placeholder {
   color: transparent;
@@ -22,6 +28,14 @@ body {
     #1d2540 39.15%,
     #0d0d0d 94.08%
   );
+}
+
+.desktop-nav {
+  display: flex;
+}
+
+.desktop-nav li {
+  margin: 0 10px;
 }
 
 header {
@@ -201,6 +215,8 @@ i {
   transition: all 0.2s linear;
   transform: translateY(35px);
   border-radius: 0 20px 20px 0;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .screenreader-only {
@@ -212,6 +228,9 @@ i {
   display: block;
   transform: translateY(35px);
   opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .dropdown-item a:hover {
@@ -276,13 +295,14 @@ h1 {
   border-color: #ed1c24;
   color: white;
   text-align: center;
-  font-size: 12px;
-  border-width: 4px;
-  border-radius: 0px 0px 20px 0px;
+
+  font-size: 1.1rem;
+  border-radius: 10px 0px 40px 0px;
   transition-duration: 0.4s;
   cursor: pointer;
-  width: 95px;
-  height: 31px;
+  width: 136px;
+  height: 48px;
+  border-width: 5px;
   border-style: solid;
   font-family: "open sans";
   font-weight: 500;
@@ -569,7 +589,7 @@ h2 {
 .contact input {
   font-family: "mulish";
   font-size: 16px;
-  border-width: 0px;
+  border: none;
   width: 100%;
   background-color: transparent;
   color: #fff;
@@ -578,6 +598,8 @@ h2 {
 
 .contact input {
   font-size: 16px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
 }
 
 .contact .heading-square {
@@ -595,24 +617,18 @@ h2 {
   background-color: #0d0d0d;
   padding: 20px;
   box-sizing: border-box;
-  margin: 32px 0px 0px 0px;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-}
-
-.form-width {
-  max-width: 40%;
-}
-
-.form p {
-  margin-bottom: 10px;
+  width: 100%;
+  flex: 1;
 }
 
 .how-can-we-help {
   margin-top: 20px;
   margin-bottom: 0px;
+  border-bottom: 2px solid white;
 }
 
 .line {
@@ -624,23 +640,16 @@ h2 {
   border-radius: 99px;
 }
 
-.line2 {
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
 textarea {
   background-color: transparent;
-  border: none;
   color: #fff;
   font-family: "mulish";
   font-size: 16px;
   resize: none;
-  height: 28px;
   width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .contact-info {
@@ -649,11 +658,11 @@ textarea {
   background-color: #2d3962;
   padding: 20px;
   box-sizing: border-box;
-  border-radius: 0 0 5px 5px;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-bottom: 32px;
+  flex: 1;
 }
 
 .contact-info p {
@@ -675,15 +684,6 @@ textarea {
 .google-map {
   height: 232px;
   width: 100%;
-}
-
-.flex-spacebetween2 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.flex-spacebetween2 img {
-  transform: translateY(5px);
 }
 
 .form button {
@@ -1244,11 +1244,13 @@ textarea {
 @media screen and (min-width: 1028px) {
   .container {
     max-width: 1300px;
+    width: 90%;
     margin: 0 auto;
   }
 
   .container2 {
     max-width: 1300px;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -1333,14 +1335,6 @@ textarea {
 
   .button-margin-right {
     margin-right: 0px;
-  }
-
-  .cta-button {
-    font-size: 1.1rem;
-    border-width: 5px;
-    border-radius: 10px 0px 40px 0px;
-    width: 136px;
-    height: 48px;
   }
 
   .flex-items {
@@ -1525,7 +1519,6 @@ textarea {
   .contact p,
   .contact input {
     font-size: 22px;
-    width: 194px;
   }
 
   .contact input {
@@ -1533,26 +1526,15 @@ textarea {
   }
 
   .form {
-    max-width: 530px;
-    padding: 32px;
-    margin: 32px 0px 32px 0px;
     border-radius: 5px;
-  }
-
-  .flex-spacebetween {
-    display: flex;
-    justify-content: space-between;
   }
 
   textarea {
     font-size: 18px;
-    transform: translateY(10px);
   }
 
   .contact-info {
-    width: 530px;
-    padding: 32px;
-    margin: 32px 0px 32px 0px;
+    padding: 20px;
     border-radius: 5px;
   }
 
@@ -1673,12 +1655,6 @@ textarea {
   .twitter2 {
     width: 38px;
     transform: translateY(-1px);
-  }
-
-  .inner-left-page .flex-spacebetween {
-    align-items: center;
-    margin-top: 32px;
-    margin-bottom: 32px;
   }
 
   .profile-button {
@@ -1839,6 +1815,16 @@ textarea {
   /* Community ends */
 }
 
+@media screen and (max-width: 600px) {
+  .cta-button {
+    font-size: 12px;
+    border-width: 4px;
+    border-radius: 10px 0px 20px 0px;
+    width: 95px;
+    height: 31px;
+  }
+}
+
 @media only screen and (max-width: 380px) {
   .all-games {
     grid-template-columns: repeat(auto-fill, minmax(300px, 177px));
@@ -1869,5 +1855,35 @@ textarea {
 
   .community-market p {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .tabs-button a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  .all-games .cta-button {
+    font-size: 12px;
+    border-width: 4px;
+    border-radius: 10px 0px 20px 0px;
+    width: 95px;
+    height: 31px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .all-games .cta-button {
+    font-size: 1.1rem;
+    border-width: 5px;
+    border-radius: 10px 0px 40px 0px;
+    width: 136px;
+    height: 48px;
   }
 }

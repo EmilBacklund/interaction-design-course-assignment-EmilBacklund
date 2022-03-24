@@ -1,0 +1,147 @@
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+  margin-top: 32px;
+}
+
+.container {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form {
+  min-width: 368px;
+}
+
+.contact-info {
+  min-width: 368px;
+}
+
+.form-error {
+  display: none;
+  color: #ed1c24;
+  font-size: 13px;
+  font-family: "exo";
+  font-weight: 400;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .modal-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 0;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+@media screen and (max-width: 755px) {
+  .container {
+    width: 100%;
+  }
+
+  .contact {
+    margin-bottom: 20px;
+    margin-top: 9px;
+  }
+
+  .heading-square {
+    margin-left: 20px;
+  }
+
+  .about-box-left .heading-square {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .contact {
+    gap: 0;
+  }
+
+  .form {
+    border-radius: 0;
+  }
+
+  .contact-info {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .form {
+    min-width: 300px;
+  }
+
+  .contact-info {
+    min-width: 300px;
+  }
+
+  .contact {
+    margin-bottom: 0;
+  }
+}

@@ -58,15 +58,16 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   height: 100%;
+  width: 90%;
 }
 
 .carousel__button--left {
-  left: -80px;
+  left: -70px;
   z-index: 99999;
 }
 
 .carousel__button--right {
-  right: -80px;
+  right: -70px;
   z-index: 99999;
 }
 
@@ -103,9 +104,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: 97%;
   min-width: 127px;
-  transform: translateY(-9.2%);
+  transform: translateY(-6.2%);
   padding-top: 40px;
   box-sizing: border-box;
 }
@@ -159,28 +160,13 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1515px) {
-  .carousel__button {
-    top: unset;
-  }
-
-  .carousel__button--left {
-    left: 0;
-    bottom: -40px;
-  }
-
-  .carousel__button--right {
-    right: 0;
-    bottom: -40px;
-  }
-}
-
 @media screen and (max-width: 1300px) {
   .community-section {
     gap: 120px;
   }
 
   .container {
+    max-width: 1300px;
     width: 90%;
     margin: 0 auto;
   }
@@ -243,11 +229,13 @@ body {
   }
 
   .carousel {
-    height: 235px;
+    height: 400px;
+    margin-bottom: 0;
   }
 
   .carousel__container {
     width: 90%;
+    max-width: 1300px;
     margin: 0 auto;
   }
 
@@ -261,11 +249,23 @@ body {
     gap: 50px;
     display: none;
   }
+
+  .about-us-box {
+    margin-bottom: 210px;
+  }
 }
 
 @media screen and (max-width: 1028px) {
   .desktop-nav {
     display: none;
+  }
+
+  .game-description p {
+    font-size: 24px;
+  }
+
+  .game-description h3 {
+    font-size: 45px;
   }
 
   .circle-profile {
@@ -353,8 +353,21 @@ body {
     gap: 20px;
   }
 
+  .game-description p {
+    font-size: 16px;
+  }
+
+  .game-description h3 {
+    font-size: 22px;
+  }
+
   .community-section {
     gap: 20px;
+  }
+
+  .carousel {
+    height: 250px;
+    margin-bottom: 0;
   }
 }
 
@@ -362,6 +375,11 @@ body {
   .circle-profile {
     width: 177px;
     height: 177px;
+  }
+
+  .cta__button--absolute {
+    position: absolute;
+    transform: translate(-204%, 35%);
   }
 
   .arrows {
@@ -393,7 +411,20 @@ body {
     margin-bottom: 40px;
   }
 
+  .carousel__button {
+    display: none;
+  }
+
   .carousel__slide {
     gap: 20px;
+  }
+
+  .cta__button--absolute {
+    transform: translate(-225%, 20%);
+  }
+
+  .carousel__image {
+    height: 100%;
+    object-fit: contain;
   }
 }
