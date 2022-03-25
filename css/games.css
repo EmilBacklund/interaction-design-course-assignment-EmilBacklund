@@ -1,0 +1,77 @@
+.market__game-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.market-images {
+  background-size: cover;
+  width: 100%;
+}
+
+.market__box {
+  flex: 1;
+  min-width: 447px;
+}
+
+.games h2,
+.community-market h2 {
+  margin-bottom: 36px;
+}
+
+.games .heading-square {
+  margin-top: 62px;
+}
+
+.community-market .heading-square {
+  margin-top: 48px;
+}
+
+@media screen and (max-width: 1028px) {
+  .market-games .cta-button {
+    font-size: 12px;
+    border-width: 4px;
+    border-radius: 10px 0px 20px 0px;
+    width: 95px;
+    height: 31px;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .market-games .cta-button {
+    font-size: 1.1rem;
+    border-width: 5px;
+    border-radius: 10px 0px 40px 0px;
+    width: 136px;
+    height: 48px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .market__box {
+    min-width: 280px;
+  }
+
+  .games .heading-square {
+    margin-top: 20px;
+  }
+
+  .games h2,
+  .community-market h2 {
+    margin-bottom: 20px;
+  }
+
+  .market-games .cta-button {
+    font-size: 12px;
+    border-width: 4px;
+    border-radius: 10px 0px 20px 0px;
+    width: 95px;
+    height: 31px;
+  }
+}

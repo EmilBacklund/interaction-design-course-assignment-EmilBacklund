@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.game-images {
+  width: 100%;
+}
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -712,37 +716,19 @@ textarea {
   color: white;
 }
 
-.heading-position {
-  position: absolute;
-  top: 135px;
-}
-
 .all-games {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(177px, 177px));
-  column-gap: 20px;
-  row-gap: 20px;
-  margin-top: 75px;
-}
-
-.all-games button {
-  margin-top: 0;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
 }
 
 .game-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 177px;
   margin-right: 0;
-}
-
-.game-images {
-  width: 177px;
-  height: 205px;
 }
 
 .community-market {
@@ -750,18 +736,12 @@ textarea {
 }
 
 .market-games {
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(374px, 125px));
-  column-gap: 20px;
-  row-gap: 50px;
-  margin-top: 100px;
   margin-bottom: 100px;
-}
-
-.market-images {
-  width: 375px;
 }
 
 .old-price {
@@ -786,16 +766,6 @@ textarea {
   margin-top: 0;
 }
 
-.community-market .flex-spacebetween2 {
-  align-items: center;
-  position: relative;
-}
-
-.community-market .heading-position {
-  position: absolute;
-  top: -270px;
-}
-
 /* Game page ends */
 /* Profile page starts */
 
@@ -812,22 +782,11 @@ textarea {
   filter: drop-shadow(0px 0px 6px #ed1c24);
 }
 
-.profile-page .heading-square {
-  height: 50px;
-  width: 4px;
-  transform: translateY(12px);
-}
-
 .left-profile-page {
-  width: 177px;
   height: 537px;
   background-color: #094b45;
   border-radius: 10px;
   box-sizing: border-box;
-}
-
-.inner-left-page {
-  padding: 20px;
 }
 
 .inner-left-page .profile-page-picture {
@@ -921,6 +880,12 @@ textarea {
   color: #bdbdbd;
   font-size: 10px;
   margin-bottom: 0;
+  background-color: #0d0d0d;
+  cursor: pointer;
+  border-style: solid;
+  font-family: "open sans";
+  font-weight: 500;
+  margin-top: 30px;
 }
 
 .profile-button:hover {
@@ -931,8 +896,6 @@ textarea {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-items: center;
-  height: 140px;
 }
 
 .profile-page p {
@@ -962,7 +925,6 @@ textarea {
   display: none;
 }
 
-.inner-right-page .heading-square,
 .right-profile-page .heading-square {
   height: 22px;
   width: 2px;
@@ -976,23 +938,13 @@ textarea {
   font-size: 18px;
 }
 
-.profile-margin {
-  margin-bottom: 10px;
-}
-
-.inner-right-page .flex-column {
-  align-items: baseline;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 100%;
-}
-
 .right-profile-page {
-  min-height: 513px;
   background-color: #2d3962;
   border-radius: 10px 10px 0px 0px;
   box-sizing: border-box;
   padding: 16px;
+  width: 100%;
+  flex: 1;
 }
 
 .my-profile-page {
@@ -1000,15 +952,13 @@ textarea {
 }
 
 .right-profile-page img {
-  width: 157px;
+  width: 100%;
   height: 203px;
 }
 
 .flex-profile {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  margin: 16px;
 }
 
 .play-sell-button {
@@ -1541,42 +1491,12 @@ textarea {
   /* about page ends */
   /* game page starts */
 
-  .heading-position {
-    top: 120px;
-  }
-
-  .all-games {
-    grid-template-columns: repeat(auto-fill, minmax(310px, 320px));
-    row-gap: 50px;
-    column-gap: 0px;
-    margin-top: 120px;
-  }
-
-  .game-card {
-    width: 310px;
-  }
-
-  .game-images {
-    width: 310px;
-    height: 320px;
-  }
-
-  .market-games {
-    grid-template-columns: repeat(auto-fill, minmax(640px, 320px));
-    margin-top: 200px;
-  }
-
-  .market-images {
-    width: 640px;
-  }
-
   .old-price {
     font-size: 20px;
   }
 
   .discount {
-    font-size: 51px;
-    margin-right: 80px;
+    font-size: 32px;
   }
 
   .exo-light {
@@ -1587,23 +1507,19 @@ textarea {
     font-size: 20px;
   }
 
-  .community-market .heading-position {
-    top: -425px;
-  }
-
   /* Game page ends */
   /* Profile page start */
 
   .left-profile-page {
-    width: 650px;
-    height: 837px;
+    width: 100%;
+    height: 100%;
     border-radius: 14px;
+    flex: 1;
   }
 
   .inner-left-page {
-    width: 50%;
-    padding: 32px;
-    padding-right: 16px;
+    width: 100%;
+    flex: 1;
   }
 
   .inner-left-page .profile-page-picture {
@@ -1615,7 +1531,7 @@ textarea {
   }
 
   .xp-bar {
-    width: 277px;
+    width: 100%;
   }
 
   .xp-completed {
@@ -1631,8 +1547,9 @@ textarea {
     font-size: 14px;
     height: 37px;
     width: 103px;
-
+    background-color: #0d0d0d;
     margin-top: 20px;
+    cursor: pointer;
   }
 
   .streamer {
@@ -1684,29 +1601,27 @@ textarea {
   }
 
   .inner-right-page {
-    width: 50%;
-    padding: 32px;
-    padding-left: 16px;
-    display: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1;
+    gap: 16px;
   }
 
   .profile-page h2 {
     font-size: 24px;
   }
 
-  .profile-margin {
-    margin: 16px;
-  }
-
   .inner-right-page img {
-    width: 277px;
+    width: 100%;
   }
 
   .right-profile-page {
     width: 100%;
     height: 100%;
     border-radius: 14px;
-    margin-bottom: 64px;
+    max-height: 827.74px;
   }
 
   .inner-upper-page {
@@ -1718,9 +1633,7 @@ textarea {
   }
 
   .right-profile-page img {
-    width: 50%;
     height: 100%;
-    margin: 16px;
   }
 
   .profile-game-card {
@@ -1823,36 +1736,17 @@ textarea {
     width: 95px;
     height: 31px;
   }
+
+  .all-games .cta-button {
+    font-size: 1.1rem;
+    border-width: 5px;
+    border-radius: 10px 0px 40px 0px;
+    width: 136px;
+    height: 48px;
+  }
 }
 
 @media only screen and (max-width: 380px) {
-  .all-games {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 177px));
-  }
-
-  .game-card {
-    width: 300px;
-  }
-
-  .game-images {
-    width: 300px;
-    height: 347.85px;
-  }
-
-  .market-games {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 125px));
-
-    margin-top: 120px;
-  }
-
-  .market-images {
-    width: 300px;
-  }
-
-  .community-market .heading-position {
-    top: -240px;
-  }
-
   .community-market p {
     font-size: 14px;
   }
@@ -1865,25 +1759,7 @@ textarea {
 }
 
 @media screen and (max-width: 1028px) {
-  .all-games .cta-button {
-    font-size: 12px;
-    border-width: 4px;
-    border-radius: 10px 0px 20px 0px;
-    width: 95px;
-    height: 31px;
-  }
-
   .desktop-nav {
     display: none;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .all-games .cta-button {
-    font-size: 1.1rem;
-    border-width: 5px;
-    border-radius: 10px 0px 40px 0px;
-    width: 136px;
-    height: 48px;
   }
 }

@@ -1,0 +1,21 @@
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  gap: 32px;
+  flex: 1;
+  min-width: 400px;
+}
+
+.inner-profile-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-right-page .heading-square {
+  margin-top: 0;
+}
+
+.profile-page {
+  margin-bottom: 64px;
+}

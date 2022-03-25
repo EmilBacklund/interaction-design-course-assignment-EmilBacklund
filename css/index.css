@@ -115,14 +115,6 @@ body {
   display: none;
 }
 
-.desktop-nav {
-  display: flex;
-}
-
-.desktop-nav li {
-  margin: 0 10px;
-}
-
 .slogan {
   font-size: 40px;
 }
@@ -256,10 +248,6 @@ body {
 }
 
 @media screen and (max-width: 1028px) {
-  .desktop-nav {
-    display: none;
-  }
-
   .game-description p {
     font-size: 24px;
   }
