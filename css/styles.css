@@ -637,8 +637,8 @@ h2 {
 
 .line {
   width: 100%;
-  height: 2px;
-  background-color: #fff;
+  height: 4px;
+  background-color: rgb(117 107 107 / 50%);
   margin-top: 12px;
   margin-bottom: 12px;
   border-radius: 99px;
@@ -782,13 +782,6 @@ textarea {
   filter: drop-shadow(0px 0px 6px #ed1c24);
 }
 
-.left-profile-page {
-  height: 537px;
-  background-color: #094b45;
-  border-radius: 10px;
-  box-sizing: border-box;
-}
-
 .inner-left-page .profile-page-picture {
   width: 99px;
   filter: drop-shadow(0px 0px 6px #ed1c24);
@@ -805,7 +798,6 @@ textarea {
   height: 4px;
   background: #d38588;
   border-radius: 99px;
-  position: relative;
   margin-bottom: 20px;
 }
 
@@ -814,6 +806,7 @@ textarea {
   height: 4px;
   background: #ed1c24;
   border-radius: 99px;
+  position: relative;
 }
 
 .xp-circle {
@@ -822,7 +815,9 @@ textarea {
   border-radius: 50%;
   background: #fff;
   position: absolute;
-  transform: translate(68.5px, -10px);
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 .hashtags {
@@ -845,26 +840,6 @@ textarea {
   margin-top: 12px;
 }
 
-.profile-socials {
-  width: 18px;
-}
-
-.facebook2 {
-  width: 22px;
-}
-
-.instagram2 {
-  width: 21px;
-}
-
-.twitter2 {
-  width: 21px;
-}
-
-.facebook2 {
-  width: 20px;
-}
-
 .flex-socials {
   display: flex;
   justify-content: space-between;
@@ -872,20 +847,19 @@ textarea {
 }
 
 .profile-button {
-  width: 59px;
-  height: 21px;
+  width: 103px;
+  height: 37px;
+  font-size: 14px;
   border-width: 1.4px;
   border-radius: 1.4px;
   border-color: #bdbdbd;
   color: #bdbdbd;
-  font-size: 10px;
   margin-bottom: 0;
   background-color: #0d0d0d;
   cursor: pointer;
   border-style: solid;
   font-family: "open sans";
   font-weight: 500;
-  margin-top: 30px;
 }
 
 .profile-button:hover {
@@ -896,6 +870,8 @@ textarea {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  align-items: center;
+  gap: 26px;
 }
 
 .profile-page p {
@@ -921,10 +897,6 @@ textarea {
   color: #bdbdbd;
 }
 
-.inner-right-page {
-  display: none;
-}
-
 .right-profile-page .heading-square {
   height: 22px;
   width: 2px;
@@ -940,25 +912,22 @@ textarea {
 
 .right-profile-page {
   background-color: #2d3962;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 14px;
   box-sizing: border-box;
-  padding: 16px;
+  padding: 32px;
   width: 100%;
   flex: 1;
+  box-shadow: 0px 0px 20px 0px;
 }
 
 .my-profile-page {
   margin-bottom: 32px;
 }
 
-.right-profile-page img {
-  width: 100%;
-  height: 203px;
-}
-
 .flex-profile {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .play-sell-button {
@@ -969,17 +938,12 @@ textarea {
   border-color: #bdbdbd;
   color: #bdbdbd;
   font-size: 10px;
-  margin-top: 10px;
-}
-
-.inner-upper-page .play-sell-button {
-  margin-bottom: 10px;
-}
-
-.profile-game-card {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  margin-top: 16px;
+  background-color: #0d0d0d;
+  cursor: pointer;
+  border-style: solid;
+  font-family: "open sans";
+  font-weight: 500;
 }
 
 .bottom-games {
@@ -994,6 +958,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
 .bottom-games img {
@@ -1510,13 +1475,6 @@ textarea {
   /* Game page ends */
   /* Profile page start */
 
-  .left-profile-page {
-    width: 100%;
-    height: 100%;
-    border-radius: 14px;
-    flex: 1;
-  }
-
   .inner-left-page {
     width: 100%;
     flex: 1;
@@ -1532,56 +1490,6 @@ textarea {
 
   .xp-bar {
     width: 100%;
-  }
-
-  .xp-completed {
-    width: 138.5px;
-  }
-
-  .xp-circle {
-    transform: translate(138.5px, -10px);
-  }
-
-  .hashtags {
-    border-radius: 28px;
-    font-size: 14px;
-    height: 37px;
-    width: 103px;
-    background-color: #0d0d0d;
-    margin-top: 20px;
-    cursor: pointer;
-  }
-
-  .streamer {
-    margin-top: 32px;
-    margin-bottom: 20px;
-  }
-
-  .profile-socials {
-    width: 32px;
-  }
-
-  .facebook2 {
-    width: 36px;
-  }
-
-  .instagram2 {
-    width: 37px;
-  }
-
-  .twitter2 {
-    width: 38px;
-    transform: translateY(-1px);
-  }
-
-  .profile-button {
-    width: 103px;
-    height: 37px;
-    font-size: 14px;
-  }
-
-  .flex-column {
-    height: 240px;
   }
 
   .profile-page p {
@@ -1600,44 +1508,15 @@ textarea {
     font-size: 18px;
   }
 
-  .inner-right-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    flex: 1;
-    gap: 16px;
-  }
-
   .profile-page h2 {
     font-size: 24px;
-  }
-
-  .inner-right-page img {
-    width: 100%;
   }
 
   .right-profile-page {
     width: 100%;
     height: 100%;
     border-radius: 14px;
-    max-height: 827.74px;
-  }
-
-  .inner-upper-page {
-    width: 90%;
-  }
-
-  .inner-lower-page {
-    width: 90%;
-  }
-
-  .right-profile-page img {
-    height: 100%;
-  }
-
-  .profile-game-card {
-    flex-direction: row;
+    max-width: 530px;
   }
 
   /* Profile page ends */

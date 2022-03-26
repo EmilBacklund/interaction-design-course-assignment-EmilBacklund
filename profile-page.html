@@ -147,7 +147,7 @@
     </section>
     <section class="container profile-page">
       <div class="my-profile-page">
-        <div style="margin-left: 16px" class="heading-square"></div>
+        <div class="heading-square"></div>
         <h1>My Profile Page</h1>
       </div>
       <div class="flex-profile">
@@ -167,8 +167,7 @@
                 ><span class="grey-xp">/400 XP</span>
               </p>
               <div class="xp-bar">
-                <div class="xp-completed"></div>
-                <div class="xp-circle"></div>
+                <div class="xp-completed"><div class="xp-circle"></div></div>
               </div>
               <p class="profile-p">
                 Name: <span class="grey">Emil Backlund</span>
@@ -185,36 +184,31 @@
               <button class="hashtags streamer">Streamer</button>
               <div class="line"></div>
               <div class="flex-socials">
-                <a href=""
-                  ><img
-                    class="profile-socials"
-                    src="/images/icons/youtube.png"
-                    alt=""
-                /></a>
-                <a href=""
-                  ><img
-                    class="profile-socials twitter2"
-                    src="/images/icons/twitter.png"
-                    alt=""
-                /></a>
-                <a href=""
-                  ><img
-                    class="profile-socials"
-                    src="/images/icons/twitch-profile.png"
-                    alt=""
-                /></a>
-                <a href=""
-                  ><img
-                    class="profile-socials instagram2"
-                    src="/images/icons/instagram.png"
-                    alt=""
-                /></a>
-                <a href=""
-                  ><img
-                    class="profile-socials facebook2"
-                    src="/images/icons/facebook.png"
-                    alt=""
-                /></a>
+                <img
+                  class="profile-socials"
+                  src="images/icons/new-icons/youtube.svg"
+                  alt=""
+                />
+                <img
+                  class="profile-socials"
+                  src="images/icons/new-icons/twitter.svg"
+                  alt=""
+                />
+                <img
+                  class="profile-socials"
+                  src="images/icons/new-icons/twitch.svg"
+                  alt=""
+                />
+                <img
+                  class="profile-socials"
+                  src="images/icons/new-icons/instagram.svg"
+                  alt=""
+                />
+                <img
+                  class="profile-socials"
+                  src="images/icons/new-icons/facebook.svg"
+                  alt=""
+                />
               </div>
               <div class="line"></div>
               <div class="inner-profile-container">
@@ -224,10 +218,12 @@
             </div>
             <div class="inner-right-page">
               <div>
-                <div class="heading-square"></div>
-                <h2>Wishlist</h2>
+                <div>
+                  <div class="heading-square"></div>
+                  <h2>Wishlist</h2>
+                </div>
+                <div><img src="/images/games/assassin.jpg" alt="" /></div>
               </div>
-              <div><img src="/images/games/assassin.jpg" alt="" /></div>
               <div><img src="/images/games/cyberpunk.jpg" alt="" /></div>
             </div>
           </div>
@@ -237,36 +233,41 @@
             <div class="heading-square"></div>
             <h2>Owned Games</h2>
           </div>
-          <div class="inner-upper-page">
-            <div class="profile-game-card">
-              <img class="hide-mobile" src="/images/games/furious.jpg" alt="" />
-              <img src="/images/games/black.jpg" alt="" />
-              <div>
-                <button class="play-sell-button hide-desktop">Play</button>
-                <button class="play-sell-button hide-desktop">Sell</button>
+          <div class="profile__image-container">
+            <div class="right__game-card">
+              <div class="game-card-styling">
+                <img src="images/games/furious.jpg" alt="" />
+                <div class="right-profile__buttons">
+                  <button class="play-sell-button">Play</button>
+                  <button class="play-sell-button">Sell</button>
+                </div>
+              </div>
+              <div class="game-card-styling">
+                <img src="images/games/black.jpg" alt="" />
+                <div class="right-profile__buttons">
+                  <button class="play-sell-button">Play</button>
+                  <button class="play-sell-button">Sell</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="inner-lower-page">
-            <div class="profile-game-card">
-              <img src="/images/games/forge-legend.jpg" alt="" />
-              <div>
-                <button class="play-sell-button hide-desktop">Play</button>
-                <button class="play-sell-button hide-desktop">Sell</button>
+            <div class="right__game-card">
+              <div class="game-card-styling">
+                <img src="images/games/forge-legend.jpg" alt="" />
+                <div class="right-profile__buttons">
+                  <button class="play-sell-button">Play</button>
+                  <button class="play-sell-button">Sell</button>
+                </div>
               </div>
-              <img
-                class="hide-mobile"
-                src="/images/games/space-war.jpg"
-                alt=""
-              />
+              <div class="game-card-styling">
+                <img src="images/games/space-war.jpg" alt="" />
+                <div class="right-profile__buttons">
+                  <button class="play-sell-button">Play</button>
+                  <button class="play-sell-button">Sell</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="bottom-games hide-desktop">
-        <img src="/images/games/mobile-game-pictures/assassin.png" alt="" />
-        <img src="/images/games/mobile-game-pictures/cyberpunk.png" alt="" />
-        <img src="/images/games/mobile-game-pictures/boxer.png" alt="" />
       </div>
     </section>
     <footer>
