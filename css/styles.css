@@ -1033,6 +1033,10 @@ textarea {
   cursor: pointer;
 }
 
+.heart.active {
+  background: url("/images/icons/filled-heart.png");
+}
+
 .wish-list-text {
   margin-left: 16px;
   font-size: 14px;

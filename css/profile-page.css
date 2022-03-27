@@ -123,10 +123,6 @@
   margin-bottom: 20px;
 }
 
-.game-card-styling {
-  background-color: #1b2133;
-}
-
 @media screen and (max-width: 1094px) {
   .right__game-card img {
     max-width: none;
