@@ -9,12 +9,19 @@ body {
   height: 620px;
   width: 100%;
   margin: 0 auto 200px;
+  /* cursor: grab; */
 }
+
+/* If I want to make the touch work */
+/* .grabbing {
+  cursor: grabbing;
+} */
 
 .carousel__image {
   height: 100%;
   object-fit: contain;
   transform: translateY(-9.2%);
+  /* user-select: none; */
 }
 
 .carousel__track-container .current-slide {
@@ -150,6 +157,11 @@ body {
 
 .game-description .cta-button {
   margin: 0 auto;
+}
+
+.game-description .cta__button--absolute a {
+  font-family: "open sans", sans-serif;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 1300px) {
@@ -345,6 +357,10 @@ body {
     font-size: 16px;
   }
 
+  .game-description .cta__button--absolute a {
+    font-size: 12px;
+  }
+
   .game-description h3 {
     font-size: 22px;
   }
@@ -408,11 +424,12 @@ body {
   }
 
   .cta__button--absolute {
-    transform: translate(-225%, 20%);
+    transform: translate(-177%, 20%);
   }
 
   .carousel__image {
     height: 100%;
     object-fit: contain;
+    width: 50%;
   }
 }
