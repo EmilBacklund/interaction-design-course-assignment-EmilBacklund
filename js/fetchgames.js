@@ -1,14 +1,14 @@
-const api = "https://emilbacklund.flywheelsites.com/wp-json/wc/store/products";
+const api = 'https://emilbacklund.flywheelsites.com/wp-json/wc/store/products';
 
-const gameContainer = document.querySelector(".all-games");
-const marketContainer = document.querySelector(".market-games");
+const gameContainer = document.querySelector('.all-games');
+const marketContainer = document.querySelector('.market-games');
 
 async function fetchGames() {
   try {
     const response = await fetch(api);
     const gameData = await response.json();
 
-    gameContainer.innerHTML = "";
+    gameContainer.innerHTML = '';
     for (let i = 0; i < gameData.length; i++) {
       let gamePicture = gameData[i].images[0].src;
       let altText = gameData[i].images[0].alt;
@@ -19,7 +19,7 @@ async function fetchGames() {
       if (!gameData[i].on_sale) {
         gameContainer.innerHTML += `
         <div>
-        <a href="">
+        <a href="details.html?id=${gameData[i].id}">
         <img class="game-images" src="${gamePicture}" alt="${altText}">
         </a>
         <div class="game-card">
@@ -28,7 +28,7 @@ async function fetchGames() {
         <p>${gamePrice} ${currency}</p>
         </div>
         <div>
-        <a href="">
+        <a href="details.html?id=${gameData[i].id}">
             <div class="buy-button">Buy Digital</div>
           </a>
         </div>
@@ -38,7 +38,7 @@ async function fetchGames() {
       } else if (gameData[i].on_sale) {
         marketContainer.innerHTML += `
           <div class="market__box">
-          <a href="">
+          <a href="details.html?id=${gameData[i].id}">
           <img class="market-images" src="${gamePicture}" alt="${altText}">
           </a>
           <div class="market__game-details">
@@ -58,7 +58,7 @@ async function fetchGames() {
           <p class="exo-smaller">DrBrave</p>
           </div>
           <div>
-          <a href="">
+          <a href="details.html?id=${gameData[i].id}">
             <div class="buy-button">Buy Digital</div>
           </a>
           </div>
@@ -68,7 +68,7 @@ async function fetchGames() {
       }
     }
   } catch (error) {
-    console.log("Problem with API", error);
+    console.log('Problem with API', error);
   }
 }
 
@@ -79,5 +79,5 @@ function calculatePrice(regularPrice, newPrice) {
   result -= 1;
   result *= 100;
   result = Math.round(result);
-  return result + " %";
+  return result + ' %';
 }

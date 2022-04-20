@@ -980,15 +980,20 @@ textarea {
   margin-top: 10px;
 }
 
-.cyberpunk-main nav {
+.detail-main nav {
   margin-left: 10px;
 }
 
-.cyberpunk-youtube-box {
+.detail-youtube-box {
   margin: 0px 10px;
 }
 
-.cyberpunk-youtube {
+.detail-img-container {
+  max-height: 804px;
+  overflow: hidden;
+}
+
+.game-detail-youtube {
   width: 100%;
 }
 
@@ -996,12 +1001,28 @@ textarea {
   background: #1e2222;
 }
 
-.breadcrumbs ul li {
+.breadcrumbs ul li a {
   text-decoration: none;
-  display: inline-block;
   font-size: 18px;
   color: #fff;
   font-family: "exo";
+}
+
+.breadcrumbs ul li {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  font-family: "exo";
+}
+
+.breadcrumbs ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+.breadcrumb-game-name {
+  font-weight: bold;
 }
 
 .breadcrumbs p {
@@ -1015,12 +1036,12 @@ textarea {
   font-weight: lighter;
 }
 
-.cyberpunk-heading {
+.game-detail-heading {
   display: inline-block;
   margin-bottom: 10px;
 }
 
-.cyberpunk-main .heading-square {
+.detail-main .heading-square {
   height: 30px;
 }
 
@@ -1051,15 +1072,15 @@ textarea {
   margin-right: 10px;
 }
 
-.cyberpunk-flex p {
+.game-detail-flex p {
   display: inline-block;
 }
 
-.cyberpunk-flex button {
+.game-detail-flex button {
   margin-top: 0;
 }
 
-.cyberpunk-flex {
+.game-detail-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1127,7 +1148,7 @@ textarea {
   margin-top: 16px;
 }
 
-.cyberpunk-bolder-text {
+.detail-bolder-text {
   font-weight: bold;
 }
 
@@ -1526,7 +1547,7 @@ textarea {
   /* Profile page ends */
   /* Cyberpunk page start */
 
-  .cyberpunk-main .heading-square {
+  .detail-main .heading-square {
     height: 45px;
   }
 
