@@ -1079,11 +1079,14 @@ textarea {
   max-width: 421px;
   min-width: 100px;
   margin-right: 10px;
+  min-height: 353px;
+  object-fit: cover;
 }
 
 .cyberpunk-gameplay2 {
   max-width: 858px;
   min-width: 200px;
+  object-fit: cover;
 }
 
 .desc-req-flex {
