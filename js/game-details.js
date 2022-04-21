@@ -18,7 +18,7 @@ async function fetchDetails() {
     console.log(detailData);
     console.log(detailData.images[0].src);
 
-    let detailPicture = detailData.images[0].src;
+    let detailPicture = detailData.images[1].src;
 
     breadcrumbGameName.innerHTML = `<a href="javascript:window.location.reload(true)">${detailData.name}</a>`;
     gameHeading.innerHTML = `${detailData.name}`;

@@ -1,14 +1,16 @@
-const api = 'https://emilbacklund.flywheelsites.com/wp-json/wc/store/products';
+const api = "https://emilbacklund.flywheelsites.com/wp-json/wc/store/products";
 
-const gameContainer = document.querySelector('.all-games');
-const marketContainer = document.querySelector('.market-games');
+const gameContainer = document.querySelector(".all-games");
+const marketContainer = document.querySelector(".market-games");
 
 async function fetchGames() {
   try {
     const response = await fetch(api);
     const gameData = await response.json();
 
-    gameContainer.innerHTML = '';
+    console.log(gameData);
+
+    gameContainer.innerHTML = "";
     for (let i = 0; i < gameData.length; i++) {
       let gamePicture = gameData[i].images[0].src;
       let altText = gameData[i].images[0].alt;
@@ -68,7 +70,7 @@ async function fetchGames() {
       }
     }
   } catch (error) {
-    console.log('Problem with API', error);
+    console.log("Problem with API", error);
   }
 }
 
@@ -79,5 +81,5 @@ function calculatePrice(regularPrice, newPrice) {
   result -= 1;
   result *= 100;
   result = Math.round(result);
-  return result + ' %';
+  return result + " %";
 }
