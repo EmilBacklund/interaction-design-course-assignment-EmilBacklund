@@ -1,14 +1,14 @@
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
-const id = params.get('id');
+const id = params.get("id");
 
 const url =
-  'https://emilbacklund.flywheelsites.com/wp-json/wc/store/products/' + id;
+  "https://emilbacklund.flywheelsites.com/wp-json/wc/store/products/" + id;
 
-const breadcrumbGameName = document.querySelector('.breadcrumb-game-name');
-const gameHeading = document.querySelector('.game-detail-heading');
-const gameDetailBox = document.querySelector('.detail-youtube-box');
+const breadcrumbGameName = document.querySelector(".breadcrumb-game-name");
+const gameHeading = document.querySelector(".game-detail-heading");
+const gameDetailBox = document.querySelector(".detail-youtube-box");
 
 async function fetchDetails() {
   try {
@@ -25,11 +25,12 @@ async function fetchDetails() {
     gameDetailBox.innerHTML = ` 
     <div class="detail-img-container">
     <img
+    style=
+    "background:url(${detailPicture});"
     class="game-detail-youtube"
     src="${detailPicture}"
-    alt="gameplay trailer for Cyberpunk"
-  />
-  </div>
+    alt="gameplay trailer for Cyberpunk"/>
+    </div>
   <div class="game-detail-flex">
     <div>
       <img
