@@ -11,13 +11,12 @@ const gameHeading = document.querySelector(".game-detail-heading");
 const gameDetailBox = document.querySelector(".detail-youtube-box");
 const description = document.querySelector(".description");
 const gameplayPicContainer = document.querySelector(".gameplay-flex");
+const errorContainer = document.querySelector(".error-container");
 
 async function fetchDetails() {
   try {
     const response = await fetch(url);
     const detailData = await response.json();
-
-    console.log(detailData);
 
     let detailPicture = detailData.images[1].src;
     let detailPictureAltText = detailData.images[1].alt;
@@ -30,7 +29,7 @@ async function fetchDetails() {
     let gameplay2AltText = detailData.images[3].alt;
     let detailId = detailData.id;
 
-    console.log(detailId);
+    document.title = `Game Hub | ${detailData.name}`;
 
     breadcrumbGameName.innerHTML = `<a href="javascript:window.location.reload(true)">${detailData.name}</a>`;
     gameHeading.innerHTML = `${detailData.name}`;
@@ -76,7 +75,13 @@ async function fetchDetails() {
   <h2>Description:</h2>
             ${detailDescription}
   `;
-  } catch (error) {}
+  } catch (error) {
+    errorContainer.innerHTML = errorMessage("error", error);
+  }
 }
 
 fetchDetails();
+
+function errorMessage(messageType = "success", message = "") {
+  return `<div class="alert ${messageType}">${message}</div>`;
+}

@@ -2,13 +2,13 @@ const api = "https://emilbacklund.flywheelsites.com/wp-json/wc/store/products";
 
 const gameContainer = document.querySelector(".all-games");
 const marketContainer = document.querySelector(".market-games");
+const errorContainer = document.querySelector(".error-container");
+console.log(errorContainer);
 
 async function fetchGames() {
   try {
     const response = await fetch(api);
     const gameData = await response.json();
-
-    console.log(gameData);
 
     gameContainer.innerHTML = "";
     for (let i = 0; i < gameData.length; i++) {
@@ -67,9 +67,7 @@ async function fetchGames() {
           `;
       }
     }
-  } catch (error) {
-    console.log("Problem with API", error);
-  }
+  } catch (error) {}
 }
 
 fetchGames();

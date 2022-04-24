@@ -1283,6 +1283,14 @@ textarea {
   }
 }
 
+.error {
+  border: 1px solid #0d0d0d;
+  color: #0d0d0d;
+  background: gray;
+  padding: 1em;
+  font-family: sans-serif;
+}
+
 @media screen and (min-width: 1028px) {
   .container {
     max-width: 1300px;
