@@ -5,6 +5,7 @@
 
 .game-images {
   width: 100%;
+  max-width: 410px;
 }
 
 input:focus,
@@ -729,6 +730,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   margin-right: 0;
+  max-width: 410px;
 }
 
 .community-market {
@@ -986,6 +988,7 @@ textarea {
 
 .detail-youtube-box {
   margin: 0px 10px;
+  position: relative;
 }
 
 .detail-img-container {
@@ -1095,7 +1098,7 @@ textarea {
   gap: 20px;
   overflow: hidden;
   margin-right: 10px;
-  max-height: 355px;
+  max-height: 280px;
 }
 
 .detail-gameplay {
@@ -1120,7 +1123,6 @@ textarea {
 .description,
 .requirements {
   width: 640px;
-  min-height: 283px;
   border-radius: 5px;
   padding: 10px;
   box-sizing: border-box;
@@ -1251,6 +1253,22 @@ textarea {
   animation-delay: -1.1s;
   top: 52px;
   left: 62px;
+}
+
+.container-detail {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.heading-square-detail {
+  height: 40px;
+  width: 3px;
+  background-color: #ed1c24;
+  display: inline-block;
+  margin-top: 32px;
+  transform: translateY(5px);
+  margin-right: 6px;
 }
 
 @keyframes lds-default {
@@ -1650,7 +1668,7 @@ textarea {
   }
 
   .game-cost-text {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   .gameplay-flex {
@@ -1659,16 +1677,15 @@ textarea {
 
   .description,
   .requirements {
-    min-height: 316px;
-    padding: 32px;
+    padding: 16px;
   }
 
   .desc-req-flex h2 {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   .desc-req-flex p {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   /* Cyberpunk page ends */
@@ -1733,5 +1750,42 @@ textarea {
 @media screen and (max-width: 1028px) {
   .desktop-nav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .desc-req-flex {
+    padding: 0 0 10px;
+    gap: 10px;
+  }
+
+  .gameplay-flex {
+    padding: 10px 0;
+    gap: 10px;
+    margin-right: 0;
+  }
+
+  .wish-list-text {
+    margin-left: 0;
+  }
+
+  .heading-square-detail {
+    margin-top: 10px;
+  }
+
+  .breadcrumbs p {
+    font-size: 16px;
+  }
+
+  .breadcrumbs ul li a {
+    font-size: 16px;
+  }
+
+  .detail-youtube-box {
+    margin: 0;
+  }
+
+  .detail-main nav {
+    margin-left: 0;
   }
 }

@@ -26,14 +26,12 @@ async function fetchGames() {
         </a>
         <div class="game-card">
         <div>
-        <p>${gameData[i].name}</p>
+        <p class="search-value">${gameData[i].name}</p>
         <p>${gamePrice} ${currency}</p>
         </div>
-        <div>
         <a href="details.html?id=${gameData[i].id}">
-            <div class="buy-button">Buy Digital</div>
+            <button class="buy-button">Buy Digital</button>
           </a>
-        </div>
         </div>
         </div>
         `;

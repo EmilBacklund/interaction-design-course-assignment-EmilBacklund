@@ -1,3 +1,9 @@
+.container {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .market__game-details {
   display: flex;
   justify-content: space-between;
@@ -24,7 +30,7 @@
 
 .games h2,
 .community-market h2 {
-  margin-bottom: 36px;
+  margin-bottom: 16px;
 }
 
 .games .heading-square {
@@ -63,6 +69,15 @@
 
 .buy-button:hover {
   box-shadow: #ed1c24 0px 0px 20px 0px;
+}
+
+.search-game {
+  height: 32px;
+  margin-bottom: 16px;
+  border: none;
+  text-indent: 8px;
+  font-family: "exo", sans-serif;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 1028px) {
