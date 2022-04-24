@@ -24,7 +24,7 @@ textarea:focus::placeholder {
 .background-picture {
   height: 100%;
   width: 100%;
-  background-image: url('../images/background/register-background.png');
+  background-image: url("../images/background/register-background.png");
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
@@ -69,7 +69,7 @@ textarea:focus::placeholder {
 }
 
 p {
-  font-family: 'open sans';
+  font-family: "open sans";
 }
 
 .payment-option-flex p {
@@ -212,8 +212,7 @@ p {
   width: 167px;
 }
 
-.cyberpunk {
-  background: url('../images/games/cyberpunk.jpg');
+.summary-picture {
   background-size: cover;
   width: 153px;
   height: 200px;
@@ -244,7 +243,7 @@ p {
   text-decoration: none;
   border: none;
   text-align: center;
-  font-family: 'open sans';
+  font-family: "open sans";
   font-size: 24px;
   color: #fff;
   font-weight: bold;
@@ -275,7 +274,7 @@ p {
 
 .overlay p {
   font-size: 12px;
-  font-family: 'open sans';
+  font-family: "open sans";
   font-weight: bold;
 }
 
@@ -290,7 +289,7 @@ p {
 input::placeholder {
   color: black;
   opacity: 1;
-  font-family: 'open sans';
+  font-family: "open sans";
 }
 
 .line {

@@ -1,3 +1,9 @@
+.container {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .market__game-details {
   display: flex;
   justify-content: space-between;
@@ -13,6 +19,8 @@
 .market-images {
   background-size: cover;
   width: 100%;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 .market__box {
@@ -22,7 +30,7 @@
 
 .games h2,
 .community-market h2 {
-  margin-bottom: 36px;
+  margin-bottom: 16px;
 }
 
 .games .heading-square {
@@ -31,6 +39,45 @@
 
 .community-market .heading-square {
   margin-top: 48px;
+}
+
+.lds-default {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.buy-button {
+  background-color: #0d0d0d;
+  border-color: #ed1c24;
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 38px;
+  border-radius: 10px 0px 40px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 136px;
+  height: 48px;
+  border-width: 5px;
+  border-style: solid;
+  font-family: "open sans";
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.buy-button:hover {
+  box-shadow: #ed1c24 0px 0px 20px 0px;
+}
+
+.search-game {
+  height: 32px;
+  margin-bottom: 16px;
+  border: none;
+  text-indent: 8px;
+  font-family: "exo", sans-serif;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 1028px) {
