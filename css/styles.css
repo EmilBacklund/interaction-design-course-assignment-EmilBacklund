@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body img {
+  user-select: none;
+}
+
 .game-images {
   width: 100%;
   max-width: 410px;
